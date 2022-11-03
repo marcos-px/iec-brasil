@@ -70,3 +70,27 @@ color: #1c1a40;
 transition-duration: 550ms;
 
 }
+
+/*Carrousel*/
+.imagem-carrosel{
+    object-fit: cover;
+    object-position: 0 80%;
+    height: 400px;
+}
+
+.personaliza-texto{
+    font-family:'Pacifico', cursive;
+}
+
+.cor-especial {
+    color: darkred;
+}
+
+.botao-cor-especial{
+    background-color: darkred;
+    color: white;
+}
+
+.borda-cor-especial{
+    border-color: darkred;
+}
