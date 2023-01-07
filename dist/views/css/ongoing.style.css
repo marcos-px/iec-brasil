@@ -130,79 +130,76 @@ body {
   background: #95e5df;
 }
 .container-fluid {
-    font-family: "Nunito", sans-serif;
-  }
+  font-family: "Nunito", sans-serif;
+}
 
 /* images */
 .iec-logo {
   max-height: 245px;
 }
-.social-icons{
-    max-height:25px;
-    justify-content: space-around;
+.social-icons {
+  max-height: 25px;
+  justify-content: space-around;
 }
 
 /* sections */
 
 .container-fluid {
-    padding-top:50px;
+  padding-top: 50px;
 }
 
 /* section top */
 
-
 /* section middle */
-.section-middle p{
-    font-size: 38px;
-    font-weight: 700;
+.section-middle p {
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .line-1 {
-    
-    width: 60%;
-    color: #1b1a40;
-    opacity: 100%;
+  width: 60%;
+  color: #1b1a40;
+  opacity: 100%;
 }
-.line-2{
-    color: #1b1a40;
-    border: 5px solid #1b1a40;
-    opacity: 100%;
-    width:25%;
-    left: 37.5%;
+.line-2 {
+  color: #1b1a40;
+  border: 5px solid #1b1a40;
+  opacity: 100%;
+  width: 25%;
+  left: 37.5%;
 }
 
 /* section bottom */
 
-.section-bottom p{
-    font-weight: 700;
-    font-size: 43px;
+.section-bottom p {
+  font-weight: 700;
+  font-size: 43px;
 }
-@media (max-width: 1200px)
-{
-  .section-bottom p{
-    margin-top:10%;
+@media (max-width: 1200px) {
+  .section-bottom p {
+    margin-top: 10%;
   }
 }
-@media (max-width: 910px)
-{
-  .section-bottom p{
-    margin-top:10%;
-    text-align:center;
+@media (max-width: 970px) {
+  .section-bottom p {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .section-bottom .span-control{
+    justify-content: space-around !important;  
   }
 }
 .section-bottom .loading {
-
   position: relative;
   margin-left: 90%;
   height: 100%;
   width: 100%;
   max-width: 95px;
-
 }
 .section-bottom .span-control {
- margin-top: 15%;
+  margin-top: 15%;
 }
-.section-bottom span{
+.section-bottom span {
   font-weight: 700;
   font-size: 20px;
 }
