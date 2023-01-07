@@ -153,7 +153,7 @@ body {
 
 /* section middle */
 .section-middle p{
-    font-size: 35px;
+    font-size: 38px;
     font-weight: 700;
 }
 
@@ -175,5 +175,34 @@ body {
 
 .section-bottom p{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 43px;
+}
+@media (max-width: 1200px)
+{
+  .section-bottom p{
+    margin-top:10%;
+  }
+}
+@media (max-width: 910px)
+{
+  .section-bottom p{
+    margin-top:10%;
+    text-align:center;
+  }
+}
+.section-bottom .loading {
+
+  position: relative;
+  margin-left: 90%;
+  height: 100%;
+  width: 100%;
+  max-width: 95px;
+
+}
+.section-bottom .span-control {
+ margin-top: 15%;
+}
+.section-bottom span{
+  font-weight: 700;
+  font-size: 20px;
 }
