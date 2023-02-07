@@ -7,7 +7,6 @@ import {
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
-import { Button } from "../Button/Button";
 import { StyledButton } from "../Button";
 export function Header() {
   return (
@@ -15,29 +14,39 @@ export function Header() {
       <div className="header-icons">
         <img className="iec-logo" src={Logo} alt="Logo" />
         <div className="social-media">
-          <Link to={""}>
+          <Link to={"https://www.instagram.com/iecbrasil/"}>
             <AiOutlineInstagram />
           </Link>
-          <Link to={""}>
+          {/* <Link to={"https://twitter.com/iecbrasil"}>
             <AiOutlineTwitter />
-          </Link>
-          <Link to={""}>
+          </Link> */}
+          <Link to={"https://www.facebook.com/iecbrasil.org"}>
             <FaFacebookF />
           </Link>
-          <Link to={""}>
+          <Link to={"https://www.linkedin.com/company/iecbrasil/"}>
             <FaLinkedinIn />
           </Link>
-          <Link to={""}>
+          <Link to={"https://www.youtube.com/@iecbrasil7560"}>
             <AiFillYoutube />
           </Link>
         </div>
       </div>
       <div className="header-buttons" style={{ background: "transparent" }}>
-        <Link className="link-buttons"  to={""} >Home</Link>
-        <Link className="link-buttons" to={""} >Proeduc</Link >
-        <Link className="link-buttons" to={""} >Projetos</Link >
-        <Link className="link-buttons" to={""} >Blog</Link >
-        <Link className="link-buttons" to={""} >Contato</Link>
+        <Link className="link-buttons" to={""}>
+          Home
+        </Link>
+        <Link className="link-buttons" to={""}>
+          Proeduc
+        </Link>
+        <Link className="link-buttons" to={""}>
+          Projetos
+        </Link>
+        <Link className="link-buttons" to={""}>
+          Blog
+        </Link>
+        <Link className="link-buttons" to={""}>
+          Contato
+        </Link>
         <StyledButton color="black" background="#FBFBFB">
           Quero apoiar
         </StyledButton>

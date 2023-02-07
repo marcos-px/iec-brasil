@@ -24,6 +24,10 @@ export const HeaderStyle = styled.div`
     gap: 26px;
     font-size: 24px;
   }
+
+.social-media :only-child{
+  cursor: pointer;
+}
   .header-buttons {
     display: flex;
     justify-content: center;
