@@ -1,7 +1,22 @@
+@font-face {
+  font-family: "Archivo-condensed";
+  src: url("../src/assets/Archivo_Condensed-Bold.ttf");
+  src: url("../src/assets/Archivo_Condensed-Bold.ttf") format("woff"),
+  url("../src/assets/Archivo_Condensed-Bold.ttf") format("opentype"),
+  }
+
+@font-face {
+  font-family: "Archivo-extra-condensed";
+  src: url("../src/assets/Archivo_ExtraCondensed-Bold.ttf");
+  src: url("../src/assets/Archivo_ExtraCondensed-Bold.ttf") format("woff"),
+  url("../src/assets/Archivo_ExtraCondensed-Bold.ttf") format("opentype"),
+  }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Archivo-condensed', sans-serif;
 }
 
 a {
