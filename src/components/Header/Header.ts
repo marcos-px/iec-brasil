@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const HeaderStyle = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   max-height: 92px;
   height: 100vh;
   background-color: #1ca3dd;
+  gap: 150px;
   .header-icons {
     display: flex;
     justify-content: center;
@@ -13,7 +14,7 @@ export const HeaderStyle = styled.div`
     gap: 40px;
   }
   .iec-logo {
-    margin-left: 80px;
+    margin-left: 40px;
     width: 90px;
     height: 65px;
   }
@@ -22,5 +23,19 @@ export const HeaderStyle = styled.div`
     color: white;
     gap: 26px;
     font-size: 24px;
+  }
+  .header-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .link-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none; 
+  white-space: nowrap;
+  margin-right: 24px;
+  color: white;
   }
 `;

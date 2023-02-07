@@ -1,13 +1,14 @@
 import { HeaderStyle } from "./Header";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import {
-  AiOutlineArrowRight,
   AiOutlineInstagram,
   AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
+import { Button } from "../Button/Button";
+import { StyledButton } from "../Button";
 export function Header() {
   return (
     <HeaderStyle>
@@ -31,8 +32,15 @@ export function Header() {
           </Link>
         </div>
       </div>
-      <div className="header-buttons">
-        
+      <div className="header-buttons" style={{ background: "transparent" }}>
+        <Link className="link-buttons"  to={""} >Home</Link>
+        <Link className="link-buttons" to={""} >Proeduc</Link >
+        <Link className="link-buttons" to={""} >Projetos</Link >
+        <Link className="link-buttons" to={""} >Blog</Link >
+        <Link className="link-buttons" to={""} >Contato</Link>
+        <StyledButton color="black" background="#FBFBFB">
+          Quero apoiar
+        </StyledButton>
       </div>
     </HeaderStyle>
   );
