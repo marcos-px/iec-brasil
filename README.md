@@ -13,6 +13,8 @@ git commit -m "Editing home page"
 
 - **NUNCA** dar push direto na branch main.
 
+- **NUNCA** dar merge sem passar pela verificação de outro desenvolvedor.
+
 - Criar branchs novas quando necessário.
 
 
