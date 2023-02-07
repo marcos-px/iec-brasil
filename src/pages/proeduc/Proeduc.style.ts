@@ -20,7 +20,7 @@ export const Div = styled.div`
 `;
 
 export const FirstSection = styled.section`
-  background-color: #eb784c;
+  background-color: #FFF8F0;
   display: flex;
   justify-content: center;
 
@@ -31,6 +31,7 @@ export const FirstSection = styled.section`
 `;
 
 export const SecondSection = styled.section`
+
   h3 {
     font-weight: 700;
     font-size: 32px;
@@ -54,7 +55,7 @@ export const ProjectContainer = styled.div`
 `
 
 export const ThirdSection = styled.section`
-  background-color: #eb784c;
+  background-color: #FFF8F0;
 
   h2 {
     font-weight: 700;

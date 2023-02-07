@@ -1,8 +1,17 @@
-import { Project } from "../../components/Project";
+import { Project } from "../../components/project/Project";
 import { Container, Div, FirstSection, ObjectiveTitles, ProjectContainer, SecondSection, ThirdSection } from "./Proeduc.style";
 import GeralImage from '../../assets/GeralImage.jpg'
 import EstudantesImage from '../../assets/EstudantesImage.jpg'
 import EducadoresImage from '../../assets/EducadoresImage.jpg'
+import newspaper from '../../assets/newspaper.svg'
+import checklist from '../../assets/checklist.svg'
+import meeting from '../../assets/meeting.svg'
+import seminar from '../../assets/seminar.svg'
+import portal from '../../assets/portal.svg'
+import projects from '../../assets/projects.svg'
+import socialMedia from '../../assets/social-media.svg'
+import results from '../../assets/results.svg'
+import evaluation from '../../assets/evaluation.svg'
 
 export default function Proeduc() {
   return (
@@ -27,18 +36,21 @@ export default function Proeduc() {
         </div>
       </FirstSection>
       <SecondSection>
+        <section>
+
         <h3>o programa possui nove projetos:</h3>
         <ProjectContainer>
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
-        <Project />
+        <Project number={1} color="green" icon={newspaper} title="Jornal Mensal"/>
+        <Project number={2} color="blue" icon={checklist} title="Avaliação inicial"/>
+        <Project number={3} color="red" icon={meeting} title="Quatro encontros com os educadores"/>
+        <Project number={4} color="yellow" icon={seminar} title="Dois seminários para os pais"/>
+        <Project number={5} color="red" icon={portal} title="Portal Virtual com atendimento ilimitado"/>
+        <Project number={6} color="yellow" icon={projects} title="Concurso de Projetos Interdisciplinares"/>
+        <Project number={7} color="blue" icon={socialMedia} title="Redes sociais"/>
+        <Project number={8} color="green" icon={results} title="Publicação de resultados apresentados"/>
+        <Project number={9} color="blue" icon={evaluation} title="Avaliação Final"/>
         </ProjectContainer>
+        </section>
       </SecondSection>
       <ThirdSection>
         <h2>objetivos</h2>
