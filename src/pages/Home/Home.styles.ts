@@ -1,19 +1,25 @@
 import styled from "styled-components";
 import bg from '../../assets/hero-top.png'
+import bg2 from '../../assets/hero-bottom.png'
+
 export const HomeStyle = styled.div`
 margin-top: 14px;
 .blank-bg{
-
+  height: 551px;
+  position: relative;
 }
 `
 export const HeroSectionTop = styled.section`
-  margin: auto auto;
-  max-width: 1336px;
+  position: absolute;
+  padding: 0 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1336px;
   height: 568px;
   background-image: url(${bg});
   background-position: center top;
   background-size: cover;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
   .display-flex{
     display: flex;
     justify-content: space-around;
@@ -39,10 +45,10 @@ export const HeroSectionTop = styled.section`
       line-height: 120%;
       text-transform: uppercase;
       font-family: "Archivo-condensed";
-      color: var(--marinho);
+      color: var(--hover);
     }
     p{
-      margin: 24px 0;
+      margin: 24px 0 50px 0;
       font-weight: 400;
       font-size: 16px;
       line-height: 150%;
@@ -50,10 +56,45 @@ export const HeroSectionTop = styled.section`
     }
   }
   .video{
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 10px;
     margin-top: 132px;
+    iframe{
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 10px;
+      border: none;
+    }
   }
 `
 export const HeroSectionBottom = styled.section`
+height: 802px;
+background-image: url(${bg2});
+background-position: center top;
+background-size: contain;
+
+h1{
+  margin: 0 auto;
+  font-family: 'Archivo-Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hover);
+  padding-top: 182px;
+  max-width: 1064px;
+}
+
+.content{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  p{
+    max-width: 630px;
+    color: var(--heavy);
+    line-height: 150%;
+    }
+
+  }
+
 `
