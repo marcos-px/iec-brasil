@@ -12,11 +12,29 @@
   url("../src/assets/Archivo_ExtraCondensed-Bold.ttf") format("opentype"),
   }
 
+:root{
+  --amarelo: #ECBF4A;
+  --laranja: #EB784C;
+  --verde: #40C078;
+  --light: #FFFFFF;
+  --medium: #838383;
+  --heavy: #1E1E1E;
+  --azul: #1CA3DD;
+  --azulEscuro: #203745;
+  --hover: #1C1A41;
+  --marinho:#1C1A41;
+  --neutral: #495057;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Archivo-condensed', sans-serif;
+  font-family: 'Archivo', sans-serif;
+}
+
+body{
+  background-color: #FFF8F0;
 }
 
 a {
@@ -29,4 +47,9 @@ ol, ul {
 
 img {
   max-width: 100%;
+}
+
+.container-home{
+  max-width: 1220px;
+  margin: 0 auto;
 }
