@@ -14,6 +14,7 @@ background: url(${props => props.background});
   align-items: end;
   padding-bottom: 30px;
 h4{
+  cursor: default;
   font-family: 'Archivo-extra-condensed';
   font-weight: 700;
   font-size: 32px;

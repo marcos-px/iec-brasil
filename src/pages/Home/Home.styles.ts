@@ -182,9 +182,9 @@ p{
 `
 export const TrapezoidBottom = styled.section`
 padding-top: 252px;
-height: 735px;
 clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
 background-color: #ffffff;
+padding-bottom: 50px;
 h2{
 margin-bottom: 50px;
 font-family: 'Archivo-extra-condensed';
@@ -198,5 +198,10 @@ color: var(--azulEscuro);
 .cards{
   display: flex;
   justify-content: space-between;
+
+}
+.btn{
+  text-align: center;
+  margin: 55px 0 30px 0;
 }
 `

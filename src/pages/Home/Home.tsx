@@ -113,6 +113,9 @@ const Home = (props: HomeProps) => {
               <ProjectCard title={'curso de ciência e tecnologia'} image={estudante4}/>
               <ProjectCard title={'curso de ciência e tecnologia'} image={estudante5}/>
             </div>
+            <div className="btn">
+              <BlueButton href='#' children={'Ver todos'}/>
+            </div>
           </div>
         </TrapezoidBottom>
       </HomeStyle>
