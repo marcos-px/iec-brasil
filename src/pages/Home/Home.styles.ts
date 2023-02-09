@@ -38,6 +38,10 @@ export const HeroSectionTop = styled.section`
       text-transform: uppercase;
       li{
         cursor: pointer;
+        &:hover{
+          color: #556aeb;
+          text-decoration: underline;
+        }
       }
     }
     h1{

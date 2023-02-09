@@ -1,8 +1,28 @@
 import styled from "styled-components";
 
 export const NewsCardStyle = styled.div`
+
+
 max-width: 391px;
 background-color: #FFFFFF;
+
+&:hover{
+  h4{
+    color: var(--azul);
+  }
+  img{
+
+    transform: scale(1.15);
+    transition-duration: 0.2s;
+    animation: flash 0.1s linear;
+    transition-timing-function: steps(1, jump-start);
+    transition-delay: 0.1s;
+    @keyframes flash {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+    }
+  }
+}
 
 h4{
 font-family: 'Archivo-extra-condensed';
@@ -29,6 +49,9 @@ a{
   text-align: end;
 }
 
+.zoom{
+  overflow: hidden;
+}
 span{
 margin: 8px 0 10px 0;
 font-family: 'Archivo';
@@ -45,5 +68,8 @@ color: var(--cinza);
 .link{
   display: flex;
   justify-content: end;
+  color: red;
 }
+
+
 `

@@ -7,11 +7,14 @@ font-size: 16px;
 line-height: 150%;
 text-align: center;
 color: #FFFFFF;
-background: #1CA3DD;
+background: var(--azul);
 border-radius: 5px;
 padding: 16px 24px;
+&:hover{
+  background-color: var(--azulEscuro);
+}
 
 `
 export const BlueButtonStyle = styled.button `
-background-color: red;
+
 `

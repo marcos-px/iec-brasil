@@ -13,7 +13,9 @@ type NewsCardProps = {
 const NewsCard = ({img, date, title, text, link}: NewsCardProps) => {
   return (
     <NewsCardStyle>
-      <img src={img} alt={`imagem de ${img}`} />
+      <div className="zoom">
+        <img src={img} alt={`imagem de ${img}`} />
+      </div>
       <div className="padding">
         <span>{date}</span>
         <h4>{title}</h4>
