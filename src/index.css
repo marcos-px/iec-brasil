@@ -7,9 +7,9 @@
 
 @font-face {
   font-family: "Archivo-extra-condensed";
-  src: url("../src/assets/Archivo_ExtraCondensed-Bold.ttf");
-  src: url("../src/assets/Archivo_ExtraCondensed-Bold.ttf") format("woff"),
-  url("../src/assets/Archivo_ExtraCondensed-Bold.ttf") format("opentype"),
+  src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf");
+  src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("woff"),
+  url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("opentype"),
   }
 
 :root{
@@ -23,6 +23,7 @@
   --azulEscuro: #203745;
   --hover: #1C1A41;
   --neutral: #495057;
+  --cinza: #8F8F8F;
 }
 
 * {

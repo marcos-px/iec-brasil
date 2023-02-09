@@ -205,3 +205,43 @@ color: var(--azulEscuro);
   margin: 55px 0 30px 0;
 }
 `
+export const Partners = styled.section`
+h2{
+  padding-top: 135px;
+  margin-bottom: 75px;
+  font-family: 'Archivo-extra-condensed';
+  font-size: 48px;
+  line-height: 52px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--hover);
+}
+.images{
+  margin: 0 auto;
+  padding-bottom: 160px;
+  max-width: 930px;
+  display: flex;
+  justify-content: space-between;
+}
+`
+export const News = styled.section`
+h2{
+margin-bottom: 56px;
+font-family: 'Archivo-extra-condensed';
+font-size: 48px;
+line-height: 52px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--azulEscuro);
+}
+.news{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  text-align: center;
+  margin: 60px 0 100px 0;
+}
+`
