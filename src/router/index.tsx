@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Proeduc from "../pages/proeduc";
 import AppLogin from "../pages/LoginPage";
-import FormContact from "../components/Contact";
+import Contact from "../pages/contact";
 
 const router = createBrowserRouter([
   // {
@@ -18,7 +18,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/contact",
-    element: <FormContact />,
+    element: <Contact />,
   },
 ]);
 
