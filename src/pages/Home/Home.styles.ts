@@ -4,6 +4,7 @@ import bg2 from '../../assets/hero-bottom.png'
 
 export const HomeStyle = styled.div`
 margin-top: 14px;
+
 .blank-bg{
   height: 551px;
   position: relative;
@@ -19,6 +20,7 @@ export const HeroSectionTop = styled.section`
   background-image: url(${bg});
   background-position: center top;
   background-size: cover;
+
 
   .display-flex{
     display: flex;
@@ -94,7 +96,50 @@ h1{
     color: var(--heavy);
     line-height: 150%;
     }
-
   }
+`
+
+export const TrapezoidTop = styled.section`
+height: 849px;
+background-color: var(--azul);
+clip-path: polygon(0 0, 100% 0, 100% 85%, 0 99%);
+h1{
+  margin: 0 auto;
+  padding: 142px 0 0 0;
+  font-family: 'Archivo-extra-condensed';
+  max-width: 920px;
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+`
+export const TrapezoidCards = styled.section`
+position: relative;
+z-index: 0;
+.content{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  bottom: 7px;
+}
+
+.cards{
+  width: 682px;
+  display: flex;
+  justify-content: space-between;
+}
+
+`
+
+export const TrapezoidBottom = styled.section`
+height: 500px;
 
 `

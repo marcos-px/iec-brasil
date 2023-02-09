@@ -12,7 +12,7 @@ const BlueButton = ({children, href, onClick}: BlueButtonProps) => {
   if(href){
     return(
       <BlueAnchorStyle>
-        <a href={href}>{children}</a>
+        <a href={href} target={'_blank'}>{children}</a>
       </BlueAnchorStyle>
     )
   }

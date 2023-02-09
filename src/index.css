@@ -46,7 +46,9 @@ ol, ul {
 
 img {
   max-width: 100%;
+  pointer-events: none;
 }
+
 
 /* container com o tamanho mais utilizado */
 .container-home{
