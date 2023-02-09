@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Header } from "../../components/Header";
 import {
   HeroSectionBottom,
@@ -32,9 +32,23 @@ import noticia1 from "../../assets/img-noticia1.png";
 import noticia2 from "../../assets/img-noticia2.png";
 import noticia3 from "../../assets/img-noticia3.png";
 
-type HomeProps = {};
+type HomeProps = {
+
+};
 
 const Home = (props: HomeProps) => {
+
+  const who = useRef(null)
+  const what = useRef(null)
+  const why = useRef(null)
+
+  const scrollTo = (elementRef:any) =>{
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: 'smooth'
+    })
+  }
+
   return (
     <>
       <Header />
@@ -44,9 +58,9 @@ const Home = (props: HomeProps) => {
             <div className="display-flex">
               <div className="text">
                 <ul>
-                  <li>quem somos</li>
-                  <li>o que queremos</li>
-                  <li>por que nós?</li>
+                  <li onClick={() => scrollTo(who)}>quem somos</li>
+                  <li onClick={() => scrollTo(what)}>o que queremos</li>
+                  <li onClick={() => scrollTo(why)}>por que nós?</li>
                 </ul>
                 <h1>aprender a ensinar desenvolver o aprender</h1>
                 <p>
@@ -70,7 +84,7 @@ const Home = (props: HomeProps) => {
           </HeroSectionTop>
         </div>
         <HeroSectionBottom>
-          <h1>
+          <h1 ref={who}>
             consolidamos a educação <br /> construímos projetos, criamos
             soluções
           </h1>
@@ -89,7 +103,7 @@ const Home = (props: HomeProps) => {
             <img src={estudante} alt="foto de estudante segurando cadernos" />
           </div>
         </HeroSectionBottom>
-        <TrapezoidTop>
+        <TrapezoidTop ref={what}>
           <h1>
             estimulamos a leitura e a produção de textos dentro e fora da escola
           </h1>
@@ -132,7 +146,7 @@ const Home = (props: HomeProps) => {
             </div>
           </div>
         </TrapezoidCards>
-        <TrapezoidMiddle>
+        <TrapezoidMiddle ref={why}>
           <div className="content container-home">
             <h2>mais do que sonhos, minha mochila tem que ter:</h2>
             <div className="cards">
