@@ -1,13 +1,21 @@
 import React from 'react'
 import { Header } from '../../components/Header'
-import { HeroSectionBottom, HeroSectionTop, HomeStyle, TrapezoidBottom, TrapezoidCards, TrapezoidTop } from './Home.styles'
+import { HeroSectionBottom, HeroSectionTop, HomeStyle, TrapezoidMiddle, TrapezoidCards, TrapezoidTop, TrapezoidBottom } from './Home.styles'
 import BlueButton from '../../components/BlueButton/BlueButton'
 import ColoredCard from '../../components/ColoredCard/ColoredCard'
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 //images
 import estudante from '../../assets/img-estudante.png'
 import estudante2 from '../../assets/img-estudante2.png'
+import estudante3 from '../../assets/img-estudante3.png'
+import estudante4 from '../../assets/img-estudante4.png'
+import estudante5 from '../../assets/img-estudante5.png'
 import pencil from '../../assets/pencil.svg'
 import book from '../../assets/book.svg'
+import icon1 from '../../assets/img-icon1.svg'
+import icon2 from '../../assets/img-icon2.svg'
+import icon3 from '../../assets/img-icon3.svg'
+import icon4 from '../../assets/img-icon4.svg'
 
 type HomeProps = {}
 
@@ -70,8 +78,42 @@ const Home = (props: HomeProps) => {
               </div>
             </div>
         </TrapezoidCards>
+        <TrapezoidMiddle>
+          <div className="content container-home">
+            <h2>mais do que sonhos, minha mochila tem que ter:</h2>
+            <div className="cards">
+              <div className="card">
+                <img src={icon1} alt="icone de formando" />
+                <h3>estudantes</h3>
+                <p>Aprendizado focado no meu desenvolvimento.</p>
+              </div>
+              <div className="card">
+                <img src={icon2} alt="icone de formando" />
+                <h3>responsáveis</h3>
+                <p>Transparência e colaboração.</p>
+              </div>
+              <div className="card">
+                <img src={icon3} alt="icone de grupo de estudantes" />
+                <h3>professores</h3>
+                <p>Inovação pedagógica, boas condições de trabalho e compromisso com estudantes.</p>
+              </div>
+              <div className="card">
+                <img src={icon4} alt="icone de escola" />
+                <h3>escola</h3>
+                <p>Planejamento, organização e responsabilidade</p>
+              </div>
+            </div>
+          </div>
+        </TrapezoidMiddle>
         <TrapezoidBottom>
-
+          <div className="content container-home">
+            <h2>projetos</h2>
+            <div className="cards">
+              <ProjectCard title={'curso de ciência e tecnologia'} image={estudante3}/>
+              <ProjectCard title={'curso de ciência e tecnologia'} image={estudante4}/>
+              <ProjectCard title={'curso de ciência e tecnologia'} image={estudante5}/>
+            </div>
+          </div>
         </TrapezoidBottom>
       </HomeStyle>
     </>

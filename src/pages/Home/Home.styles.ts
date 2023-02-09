@@ -139,7 +139,64 @@ z-index: 0;
 
 `
 
-export const TrapezoidBottom = styled.section`
-height: 500px;
+export const TrapezoidMiddle = styled.section`
+height: 680px;
+padding-top: 170px;
 
+h2{
+  font-family: 'Archivo-condensed';
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hover);
+}
+
+h3{
+  font-family: 'Archivo-extra-condensed';
+  font-size: 40px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--azul);
+  margin: 16px 0;
+}
+
+p{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.cards{
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  max-width: 230px;
+  text-align: center;
+}
+`
+export const TrapezoidBottom = styled.section`
+padding-top: 252px;
+height: 735px;
+clip-path: polygon(0 18%, 100% 0, 100% 100%, 0 100%);
+background-color: #ffffff;
+h2{
+margin-bottom: 50px;
+font-family: 'Archivo-extra-condensed';
+font-size: 48px;
+line-height: 52px;
+text-align: center;
+letter-spacing: 0.05em;
+text-transform: uppercase;
+color: var(--azulEscuro);
+}
+.cards{
+  display: flex;
+  justify-content: space-between;
+}
 `
