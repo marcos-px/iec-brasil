@@ -7,7 +7,7 @@ max-width: 391px;
 background-color: #FFFFFF;
 
 &:hover{
-  cursor: pointer;
+
   h4{
     color: var(--azul);
   }
