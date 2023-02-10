@@ -19,8 +19,11 @@ import NewsCard from "../../components/NewsCard/NewsCard";
 import estudante from "../../assets/img-estudante.png";
 import estudante2 from "../../assets/img-estudante2.png";
 import estudante3 from "../../assets/img-estudante3.png";
+import estudante3hover from "../../assets/img-estudante3hover.png";
 import estudante4 from "../../assets/img-estudante4.png";
+import estudante4hover from "../../assets/img-estudante4hover.png";
 import estudante5 from "../../assets/img-estudante5.png";
+import estudante5hover from "../../assets/img-estudante5hover.png";
 import pencil from "../../assets/pencil.svg";
 import book from "../../assets/book.svg";
 import icon1 from "../../assets/img-icon1.svg";
@@ -183,14 +186,23 @@ const Home = (props: HomeProps) => {
               <ProjectCard
                 title={"curso de ciência e tecnologia"}
                 image={estudante3}
-              />
+                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
+                link={'#'}
+                imageHover={estudante3hover}
+                />
               <ProjectCard
                 title={"curso de ciência e tecnologia"}
                 image={estudante4}
+                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
+                link={'#'}
+                imageHover={estudante4hover}
               />
               <ProjectCard
                 title={"curso de ciência e tecnologia"}
                 image={estudante5}
+                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
+                link={'#'}
+                imageHover={estudante5hover}
               />
             </div>
             <div className="btn">
