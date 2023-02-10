@@ -7,10 +7,11 @@ max-width: 391px;
 background-color: #FFFFFF;
 
 &:hover{
+  cursor: pointer;
   h4{
     color: var(--azul);
   }
-  img{
+  .zoom img{
 
     transform: scale(1.15);
     transition-duration: 0.2s;
@@ -21,6 +22,13 @@ background-color: #FFFFFF;
     0% { opacity: 0.5; }
     100% { opacity: 1; }
     }
+  }
+
+  .arrow{
+    display: none;
+  }
+  .arrow-hover{
+    display: flex;
   }
 }
 
@@ -71,5 +79,8 @@ color: var(--cinza);
   color: red;
 }
 
+.arrow-hover{
+  display: none;
+}
 
 `

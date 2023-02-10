@@ -1,6 +1,7 @@
 import React from 'react'
 import { NewsCardStyle } from './NewsCard.styles'
 import arrow from '../../assets/arrow.svg'
+import arrowhover from '../../assets/arrowhover.svg'
 
 type NewsCardProps = {
   img:string
@@ -21,7 +22,8 @@ const NewsCard = ({img, date, title, text, link}: NewsCardProps) => {
         <h4>{title}</h4>
         <p>{text}</p>
         <div className='link'>
-          <a href={link} target={'_blank'}><img src={arrow} alt="icone de seta" /></a>
+          <a className='arrow' href={link} target={'_blank'}><img src={arrow} alt="icone de seta" /></a>
+          <a className='arrow-hover' href={link} target={'_blank'}><img src={arrowhover} alt="icone de seta" /></a>
         </div>
       </div>
     </NewsCardStyle>
