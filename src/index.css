@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
-
 a {
   all: unset;
 }
@@ -20,7 +20,7 @@ img {
 .contact-container {
   display: flex;
   margin: 0 auto;
-  justify-content: center;
+  gap: 120px;
   align-items: center;
   max-height: 680px;
   background-color: #fff8f0;
