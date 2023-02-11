@@ -1,7 +1,40 @@
+@font-face {
+  font-family: "Archivo-condensed";
+  src: url("../src/assets/Archivo_Condensed-Bold.ttf");
+  src: url("../src/assets/Archivo_Condensed-Bold.ttf") format("woff"),
+  url("../src/assets/Archivo_Condensed-Bold.ttf") format("opentype"),
+  }
+
+@font-face {
+  font-family: "Archivo-extra-condensed";
+  src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf");
+  src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("woff"),
+  url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("opentype"),
+  }
+
+:root{
+  --amarelo: #ECBF4A;
+  --laranja: #EB784C;
+  --verde: #40C078;
+  --light: #FFFFFF;
+  --medium: #838383;
+  --heavy: #1E1E1E;
+  --azul: #1CA3DD;
+  --azulEscuro: #203745;
+  --hover: #1C1A41;
+  --neutral: #495057;
+  --cinza: #8F8F8F;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Archivo', sans-serif;
+}
+
+body{
+  background-color: #FFF8F0;
 }
 
 a {
@@ -14,4 +47,11 @@ ol, ul {
 
 img {
   max-width: 100%;
+}
+
+
+/* container com o tamanho mais utilizado */
+.container-home{
+  max-width: 1220px;
+  margin: 0 auto;
 }
