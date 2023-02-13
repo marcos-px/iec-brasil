@@ -1,4 +1,5 @@
 import { Project } from "../../components/project/Project";
+import { Header } from "../../components/Header";
 import { Container, Div, FirstSection, ObjectiveTitle, ObjectiveTitles, ProjectContainer, SecondSection, ThirdSection } from "./Proeduc.style";
 import GeralImage from '../../assets/GeralImage.jpg'
 import EstudantesImage from '../../assets/EstudantesImage.jpg'
@@ -20,6 +21,7 @@ type Props = {
 export default function Proeduc({ color }:Props) {
   return (
     <>
+      <Header/>
       <Div>
         <h2>aprender a ensinar <br /> desenvolver o aprender</h2>
       </Div>
@@ -65,7 +67,7 @@ export default function Proeduc({ color }:Props) {
           <ObjectiveTitle color="linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #42C076" shape="polygon(3% 1%, 100% 14%, 100% 100%, 0% 100%)">
             <h3>ESTUDANTES</h3>
           </ObjectiveTitle>
-          <ObjectiveTitle color="#EB784C;" shape="polygon(0 21%, 100% 0, 100% 100%, 0% 100%);">
+          <ObjectiveTitle color="#EB784C;" shape="polygon(0 19%, 100% 0, 100% 100%, 0% 100%);">
             <h3>EDUCADORES</h3>
           </ObjectiveTitle>
         </ObjectiveTitles>

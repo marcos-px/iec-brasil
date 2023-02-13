@@ -12,9 +12,10 @@ export const Div = styled.div`
   display: flex;
   align-items: center;
   h2 {
+    font-family: "Archivo-extra-condensed";
     font-style: normal;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 48px;
     line-height: 52px;
     text-align: center;
     letter-spacing: 0.1em;
@@ -28,8 +29,6 @@ export const FirstSection = styled.section`
   background-color: #FFF8F0;
   display: flex;
   justify-content: center;
-  height: 1116px;
-  clip-path: polygon(0 0, 100% 0, 100% 89%, 0% 100%);
 
   p {
     text-align: start;
@@ -43,6 +42,9 @@ export const FirstSection = styled.section`
 `;
 
 export const SecondSection = styled.section`
+background-color: #FFF;
+clip-path: polygon(0 8%, 100% 0%, 100% 92%, 0% 100%);
+height: 1336px;
 
   h3 {
     font-weight: 700;
@@ -52,7 +54,7 @@ export const SecondSection = styled.section`
     text-transform: uppercase;
     color: #203745;
     text-align: center;
-    margin-top: 79px;
+    padding-top: 183px;
   }
 
 `;
@@ -70,10 +72,10 @@ export const ProjectContainer = styled.div`
 
 export const ThirdSection = styled.section`
   background-color: #FFF8F0;
-  clip-path: polygon(0 11%, 100% 0, 100% 100%, 0 100%);
+  margin-top: 85px;
 
   h2 {
-    padding-top: 160px;
+    font-family: "Archivo-extra-condensed";
     font-weight: 700;
     font-size: 48px;
     line-height: 52px;
@@ -98,10 +100,12 @@ export const ObjectiveTitle = styled.div<ObjectiveTitleProps>`
     clip-path: ${(props) => props.shape};
 
     h3 {
+    font-family: "Archivo-extra-condensed";
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     line-height: 44px;
     text-align: center;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #1c1a41;
     margin-top: 17px;
