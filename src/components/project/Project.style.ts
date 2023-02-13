@@ -47,6 +47,6 @@ export const NumberCard = styled.div`
 `;
 
 export const IconCard = styled.div`
-    width: 220px;
+    width: 240px;
     margin: 0 auto;
 `

@@ -4,7 +4,7 @@ type Props = {
   number: number;
   color: string;
   icon: string;
-  title?: string;
+  title: string;
 }
 
 export function Project({ number, color, icon, title }: Props) {

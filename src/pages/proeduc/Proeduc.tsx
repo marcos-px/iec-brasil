@@ -1,5 +1,5 @@
 import { Project } from "../../components/project/Project";
-import { Container, Div, FirstSection, ObjectiveTitles, ProjectContainer, SecondSection, ThirdSection } from "./Proeduc.style";
+import { Container, Div, FirstSection, ObjectiveTitle, ObjectiveTitles, ProjectContainer, SecondSection, ThirdSection } from "./Proeduc.style";
 import GeralImage from '../../assets/GeralImage.jpg'
 import EstudantesImage from '../../assets/EstudantesImage.jpg'
 import EducadoresImage from '../../assets/EducadoresImage.jpg'
@@ -13,7 +13,11 @@ import socialMedia from '../../assets/social-media.svg'
 import results from '../../assets/results.svg'
 import evaluation from '../../assets/evaluation.svg'
 
-export default function Proeduc() {
+type Props = {
+  color: string;
+}
+
+export default function Proeduc({ color }:Props) {
   return (
     <>
       <Div>
@@ -24,13 +28,13 @@ export default function Proeduc() {
         <iframe style={{ border: '1px solid #000000' }} width="1002px" height="602px" src="https://www.youtube.com/embed/jctJlqkfJXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           <p>
             O PROEDUC é um programa inédito no Brasil, que trabalha a individualidade de cada estudante e promove a educação com base no reforço positivo.
-            <br/>
+            <br/> <br />
             O programa tem o objetivo de alavancar Os índices do IDEB.
-            <br/>
+            <br/> <br />
             O Índice de Desenvolvimento da Educação Básica (IDEB) foi criado em 2007 para medir a qualidade de cada escola e de cada rede de ensino. O indicador é calculado com base no desempenho do estudante em avaliações do INEP e em taxas de aprovação. Assim, para que o IDEB de uma escola ou rede cresça é preciso que o aluno aprenda, não repita o ano e frequente a sala de aula.
-            <br/>
+            <br/> <br />
             O PROEDUC atenta para a diversidade, buscando perceber e atender às necessidades educativas, em salas de aulas, no sistema regular de ensino, de forma a promover a aprendizagem e o desenvolvimento pessoal de todos. Constituído por uma prática pedagógica inovadora, plural, dinâmica e flexível requer mudanças significativas na estrutura e no funcionamento das escolas, na formação humana dos professores e nas relações professor-aluno.
-            <br/>
+            <br/> <br />
             O PROEDUC possui registro no Cartório de Títulos e Documentos de Belo Horizonte , além de direitos autorais registrados na Biblioteca Nacional ( Nº do registro: 635.598.livro:1.221.Folha264 - protocolo de requerimento:2014RJ_3012.)
           </p>
         </div>
@@ -55,15 +59,15 @@ export default function Proeduc() {
       <ThirdSection>
         <h2>objetivos</h2>
         <ObjectiveTitles>
-          <div>
+          <ObjectiveTitle color="#ECBF4A;" shape="polygon(3% 17%, 100% 0, 100% 100%, 0% 100%);">
             <h3>GERAL</h3>
-          </div>
-          <div>
+          </ObjectiveTitle>
+          <ObjectiveTitle color="linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #42C076" shape="polygon(3% 1%, 100% 14%, 100% 100%, 0% 100%)">
             <h3>ESTUDANTES</h3>
-          </div>
-          <div>
+          </ObjectiveTitle>
+          <ObjectiveTitle color="#EB784C;" shape="polygon(0 21%, 100% 0, 100% 100%, 0% 100%);">
             <h3>EDUCADORES</h3>
-          </div>
+          </ObjectiveTitle>
         </ObjectiveTitles>
         <hr />
         <Container>
