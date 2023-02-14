@@ -1,6 +1,9 @@
 import { useState } from "react";
+import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
-import { IoLocationOutline, IoPersonOutline } from "react-icons/io5";
+import { IoLocationOutline } from "react-icons/io5";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 import { ContactForm, ContactInfo } from "../components/Contact/Contact";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
@@ -16,34 +19,40 @@ function Contact() {
       <Header />
       <div className="contact-container">
         <ContactInfo>
-          <div>
+          <div className="contact-info-container">
             <div className="info-contact-control">
-              <AiOutlineMail />
-              <h4>Converse com a gente</h4>
+              <div className="title-icon">
+                <AiOutlineMail/>
+                <h4>Converse com a gente</h4>
+              </div>
+              <div>
+                <p>email@email.com</p>
+              </div>
             </div>
-            <div>
-              <p>email@email.com</p>1
-            </div>
-          </div>
-          <div>
             <div className="info-contact-control">
-              <IoLocationOutline />
-              <h4>Onde estamos</h4>
+              <div className="title-icon">
+                <IoLocationOutline />
+                <h4>Onde estamos</h4>
+              </div>
+              <div>
+                <p>Rua Lorem ipsum, 00 <br/>Cidade/Estado <br/>CEP 00000-000 </p>
+              </div>
             </div>
-            <p>
-              Rua Lorem ipsum, 00
-              <br />
-              Cidade/Estado
-              <br />
-              CEP 00000-000
-            </p>
-          </div>
-          <div>
             <div className="info-contact-control">
-              <AiOutlinePhone />
-              <h4>Telefone</h4>
+              <div className="title-icon">
+                <AiOutlinePhone/>
+                <h4>Telefone</h4>
+              </div>
+              <div>
+                <p>(00)00000-0000</p>
+              </div>
+              <div className="social-media">
+              <FaInstagram />
+              <FaFacebookF />
+              <FaLinkedinIn />
             </div>
-            <p>(00)00000-0000</p>
+            </div>
+            
           </div>
         </ContactInfo>
         <ContactForm>

@@ -161,24 +161,38 @@ export const ContactForm = styled.form`
 
 export const ContactInfo = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   background-image: url(${BackgroundSide});
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
-  width: 40vh;
-  max-height: 100vh;
   height: 680px;
   width: 470px;
-  justify-content: center;
-  align-items: center;
-
-  .info-contact-control {
+  .title-icon {
     display: flex;
-    max-width: 200px;
-    align-items: center;
   }
-  h4 {
-    font-weight: 400;
+  .contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    h4 {
+      margin-left: 16px;
+      margin-bottom: 8px;
+    }
+    p {
+      margin-left: 32px;
+      margin-bottom: 25px;
+      color: #bebebe;
+    }
+  }
+  .info-contact-control {
+    width: 200px;
+  }
+
+  .social-media {
+    display: flex;
+    margin-top: 120px;
+    gap: 60px;
   }
 `;

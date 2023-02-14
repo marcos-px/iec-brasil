@@ -20,7 +20,7 @@ img {
 .contact-container {
   display: flex;
   margin: 0 auto;
-  gap: 120px;
+  gap: 240px;
   align-items: center;
   max-height: 680px;
   background-color: #fff8f0;
