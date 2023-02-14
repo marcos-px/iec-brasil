@@ -60,7 +60,7 @@ function Contact() {
         </ContactInfo>
         <ContactForm>
           <div className="contact-title">
-            <h1 >Entre em contato</h1>
+            <h1>Entre em contato</h1>
             <p>
               Entre em contato com o IEC. Nossa equipe retornará o mais rápido
               possível.
@@ -68,11 +68,10 @@ function Contact() {
           </div>
 
           <form onSubmit={() => {}} className="form">
-            <input
-              style={{ fontFamily: "FontAwesome" }}
+            <input  
               type="text"
               className="input"
-              placeholder="Nome"
+              placeholder="&#xf007;    Nome"
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
@@ -80,14 +79,14 @@ function Contact() {
             <input
               type="text"
               className="input"
-              placeholder="Email"
+              placeholder="&#xf0e0;    Email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
             <input
               type="text"
               className="input"
-              placeholder="Telefone"
+              placeholder="&#xf095;    Telefone"
               onChange={(e) => setPhoneNumber(e.target.value)}
               value={phoneNumber}
             />
@@ -149,7 +148,9 @@ function Contact() {
                 id="doacoes"
                 name="doacoes"
               />
-              <label htmlFor="doacoes">Concordo em receber notícias do IEC.</label>
+              <label htmlFor="doacoes">
+                Concordo em receber notícias do IEC.
+              </label>
             </div>
           </form>
         </ContactForm>

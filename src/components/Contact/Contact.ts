@@ -13,22 +13,21 @@ export const ContactForm = styled.form`
   color: #000;
 
   .contact-title {
-    
     width: 600px;
-    h1{
+    h1 {
       margin-bottom: 16px;
     }
-    p{
+    p {
       margin-bottom: 25px;
     }
   }
-   .form {
+  .form {
     max-width: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-  .subject{ 
+  .subject {
     margin: 25px 0px;
   }
   .input {
@@ -39,7 +38,7 @@ export const ContactForm = styled.form`
     padding: 0 8px;
     border-bottom: 1px inset #8f8f8f;
     opacity: 30%;
-    font-family: Archivo;
+    font-family: FontAwesome;
     font-size: 16px;
   }
 
@@ -116,8 +115,8 @@ export const ContactForm = styled.form`
     position: absolute;
     left: 0px;
     top: -3px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border: 1px solid #000000;
     background: #fff8f0;
     border-radius: 4px;
@@ -131,7 +130,7 @@ export const ContactForm = styled.form`
     left: 5px;
     font-size: 20px;
     line-height: 1.2;
-    color: #1CA3DD;
+    color: #1ca3dd;
     transition: all 0.2s;
   }
   /* checked mark aspect changes */
@@ -159,12 +158,22 @@ export const ContactForm = styled.form`
   /* accessibility */
   [type="checkbox"]:checked:focus + label:before,
   [type="checkbox"]:not(:checked):focus + label:before {
-    border: 2px solid #1CA3DD;
+    border: 2px solid #1ca3dd;
   }
   /* hover style just for information */
   label:hover:before {
-    border: 2px solid #1CA3DD !important;
+    border: 2px solid #1ca3dd !important;
     background: #fff8f0;
+  }
+  /* webkit solution */
+  ::-webkit-input-placeholder {
+    font-family: FontAwesome;
+    text-align: right;
+  }
+  /* mozilla solution */
+  input:-moz-placeholder {
+    font-family: FontAwesome;
+    text-align: right;
   }
   @media screen and (max-width: 940px) {
     .button {
