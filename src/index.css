@@ -19,9 +19,13 @@ img {
 
 .contact-container {
   display: flex;
-  margin: 0 auto;
-  gap: 240px;
   align-items: center;
+  gap: 60px;
   max-height: 680px;
   background-color: #fff8f0;
+}
+@media screen and (max-width:1024px) {
+  .contact-container {
+    gap: 0px;
+  }
 }

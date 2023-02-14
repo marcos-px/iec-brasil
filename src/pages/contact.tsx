@@ -22,7 +22,7 @@ function Contact() {
           <div className="contact-info-container">
             <div className="info-contact-control">
               <div className="title-icon">
-                <AiOutlineMail/>
+                <AiOutlineMail />
                 <h4>Converse com a gente</h4>
               </div>
               <div>
@@ -35,32 +35,38 @@ function Contact() {
                 <h4>Onde estamos</h4>
               </div>
               <div>
-                <p>Rua Lorem ipsum, 00 <br/>Cidade/Estado <br/>CEP 00000-000 </p>
+                <p>
+                  Rua Lorem ipsum, 00 <br />
+                  Cidade/Estado <br />
+                  CEP 00000-000{" "}
+                </p>
               </div>
             </div>
             <div className="info-contact-control">
               <div className="title-icon">
-                <AiOutlinePhone/>
+                <AiOutlinePhone />
                 <h4>Telefone</h4>
               </div>
               <div>
                 <p>(00)00000-0000</p>
               </div>
               <div className="social-media">
-              <FaInstagram />
-              <FaFacebookF />
-              <FaLinkedinIn />
+                <FaInstagram />
+                <FaFacebookF />
+                <FaLinkedinIn />
+              </div>
             </div>
-            </div>
-            
           </div>
         </ContactInfo>
         <ContactForm>
-          <h1 className="contact">Entre em contato</h1>
-          <span>
-            Entre em contato com o IEC. Nossa equipe retornará o mais rápido
-            possível.
-          </span>
+          <div className="contact-title">
+            <h1 >Entre em contato</h1>
+            <p>
+              Entre em contato com o IEC. Nossa equipe retornará o mais rápido
+              possível.
+            </p>
+          </div>
+
           <form onSubmit={() => {}} className="form">
             <input
               style={{ fontFamily: "FontAwesome" }}
@@ -143,7 +149,7 @@ function Contact() {
                 id="doacoes"
                 name="doacoes"
               />
-              <label htmlFor="doacoes">Doações</label>
+              <label htmlFor="doacoes">Concordo em receber notícias do IEC.</label>
             </div>
           </form>
         </ContactForm>

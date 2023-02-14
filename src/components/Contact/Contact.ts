@@ -7,22 +7,30 @@ export const ContactForm = styled.form`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 60vh;
+  width: 100vh;
   color: #fff;
   padding: 14px;
   color: #000;
 
-  .title {
-    margin-bottom: 14px;
+  .contact-title {
+    
+    width: 600px;
+    h1{
+      margin-bottom: 16px;
+    }
+    p{
+      margin-bottom: 25px;
+    }
   }
-
-  .form {
+   .form {
     max-width: 600px;
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
+  .subject{ 
+    margin: 25px 0px;
+  }
   .input {
     background-color: #fff8f0;
     margin-bottom: 14px;
@@ -31,8 +39,10 @@ export const ContactForm = styled.form`
     padding: 0 8px;
     border-bottom: 1px inset #8f8f8f;
     opacity: 30%;
-    font-family: FontAwesome;
+    font-family: Archivo;
+    font-size: 16px;
   }
+
   .textarea {
     margin-bottom: 14px;
     border: 0;
@@ -58,7 +68,7 @@ export const ContactForm = styled.form`
   }
 
   .button {
-    left: 80%;
+    left: 85%;
     top: 5%;
     position: relative;
     width: 94px;
@@ -118,11 +128,10 @@ export const ContactForm = styled.form`
   [type="checkbox"]:checked + label:after {
     content: "✔";
     position: absolute;
-    top: 2px;
     left: 5px;
     font-size: 20px;
     line-height: 1.2;
-    color: #0000ff;
+    color: #1CA3DD;
     transition: all 0.2s;
   }
   /* checked mark aspect changes */
@@ -150,12 +159,17 @@ export const ContactForm = styled.form`
   /* accessibility */
   [type="checkbox"]:checked:focus + label:before,
   [type="checkbox"]:not(:checked):focus + label:before {
-    border: 2px dotted #0000ff;
+    border: 2px solid #1CA3DD;
   }
   /* hover style just for information */
   label:hover:before {
-    border: 2px solid #4778d9 !important;
+    border: 2px solid #1CA3DD !important;
     background: #fff8f0;
+  }
+  @media screen and (max-width: 940px) {
+    .button {
+      left: 82%;
+    }
   }
 `;
 
@@ -167,6 +181,11 @@ export const ContactInfo = styled.div`
   background-repeat: no-repeat;
   height: 680px;
   width: 470px;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
   .title-icon {
     display: flex;
   }
