@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { FormHTMLAttributes, useState } from "react";
 import React from "react";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { AiOutlineInstagram, AiFillYoutube } from "react-icons/ai";
 import { ContactForm, ContactInfo } from "../components/Contact/Contact";
+import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
 
@@ -13,6 +13,42 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+
+  function sendEmail(e: any) {
+    e.preventDefault();
+
+    if (name === "" || email === "" || phoneNumber === "" || message === "") {
+      alert("Preencha todos os campos");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+      phone: phoneNumber,
+    };
+    emailjs
+      .send(
+        "service_du8us6g",
+        "template_2elpy7c",
+        templateParams,
+        "yR13Du7wbMk-AWYlD"
+      )
+      .then(
+        (response) => {
+          alert("E-mail enviado com sucesso.")
+          console.log("Email enviado", response.status, response.text);
+          setName("");
+          setEmail("");
+          setPhoneNumber("");
+          setMessage("");
+        },
+        (error) => {
+          console.log("Error", error);
+        }
+      );
+  }
 
   return (
     <>
@@ -67,8 +103,8 @@ function Contact() {
             </p>
           </div>
 
-          <form onSubmit={() => {}} className="form">
-            <input  
+          <form onSubmit={sendEmail} className="form">
+            <input
               type="text"
               className="input"
               placeholder="&#xf007;    Nome"

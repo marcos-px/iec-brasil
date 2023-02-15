@@ -1,7 +1,7 @@
 import BackgroundSide from "../../assets/side-bg-contact.png";
 import styled from "styled-components";
 
-export const ContactForm = styled.form`
+export const ContactForm = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
