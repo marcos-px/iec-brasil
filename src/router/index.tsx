@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/proeduc',
-        element: < Proeduc />,
+        element: < Proeduc color={''} />,
     },
     {
         path: "/login",

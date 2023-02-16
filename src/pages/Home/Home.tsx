@@ -34,6 +34,7 @@ import placeholder from "../../assets/placeholder.png";
 import noticia1 from "../../assets/img-noticia1.png";
 import noticia2 from "../../assets/img-noticia2.png";
 import noticia3 from "../../assets/img-noticia3.png";
+import Footer from "../../components/Footer";
 
 type HomeProps = {
 
@@ -254,6 +255,7 @@ const Home = (props: HomeProps) => {
           </div>
         </News>
       </HomeStyle>
+      <Footer />
     </>
   );
 };

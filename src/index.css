@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
   font-family: "Archivo-condensed";
   src: url("../src/assets/Archivo_Condensed-Bold.ttf");
@@ -35,6 +36,7 @@
 
 body{
   background-color: #FFF8F0;
+  overflow-x: hidden; /* esconder scroll no eixo X */;
 }
 
 a {

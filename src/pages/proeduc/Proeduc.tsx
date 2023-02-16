@@ -13,6 +13,7 @@ import projects from '../../assets/projects.svg'
 import socialMedia from '../../assets/social-media.svg'
 import results from '../../assets/results.svg'
 import evaluation from '../../assets/evaluation.svg'
+import Footer from "../../components/Footer";
 
 type Props = {
   color: string;
@@ -105,6 +106,7 @@ export default function Proeduc({ color }:Props) {
           </div>
         </Container>
       </ThirdSection>
+      <Footer />
     </>
   )
 }
