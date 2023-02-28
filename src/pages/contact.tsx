@@ -1,5 +1,6 @@
-import { Component, FormEvent, InputHTMLAttributes, useState } from "react";
-import React, { Children } from "react";
+import { useState } from "react";
+import React from "react";
+import Swal from "sweetalert2";
 import InputMask from "react-input-mask";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
@@ -55,7 +56,7 @@ function Contact() {
       )
       .then(
         (response) => {
-          alert("E-mail enviado com sucesso.");
+          // alert("E-mail enviado com sucesso."); -- ALERTA DE ENVIO --
           console.log("Email enviado", response.status, response.text);
           setName("");
           setEmail("");
@@ -63,9 +64,10 @@ function Contact() {
           setMessage("");
         },
         (error) => {
-          console.log("Error", error);
+          console.log("Error", error.status, error);
         }
       );
+      
   }
 
   return (
