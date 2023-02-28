@@ -1,5 +1,9 @@
-import { FormHTMLAttributes, useState } from "react";
-import React from "react";
+import { Component, FormEvent, InputHTMLAttributes, useState } from "react";
+import React, { Children } from "react";
+import InputMask from "react-input-mask";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
@@ -14,13 +18,27 @@ function Contact() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
 
-  function sendEmail(e: any) {
-    e.preventDefault();
+  // const phoneRegExp = /^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,3})|(\(?\d{2,3} \)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1} $/
+  ///^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
-    if (name === "" || email === "" || phoneNumber === "" || message === "") {
-      alert("Preencha todos os campos");
-      return;
-    }
+  const schema = yup.object({
+    name: yup.string().required("Digite o seu nome"),
+    email: yup.string().required("Escolha um e-mail válido"),
+    phoneNumber: yup.string().required("Informe um número de telefone válido."),
+    message: yup.string(),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+
+  function sendEmail() {
+    // e.preventDefault();
 
     const templateParams = {
       from_name: name,
@@ -37,7 +55,7 @@ function Contact() {
       )
       .then(
         (response) => {
-          alert("E-mail enviado com sucesso.")
+          alert("E-mail enviado com sucesso.");
           console.log("Email enviado", response.status, response.text);
           setName("");
           setEmail("");
@@ -103,30 +121,47 @@ function Contact() {
             </p>
           </div>
 
-          <form onSubmit={sendEmail} className="form">
+          <form
+            onSubmit={handleSubmit(sendEmail)}
+            className="form"
+            autoComplete="off"
+          >
             <input
+              {...register("name")}
               type="text"
               className="input"
               placeholder="&#xf007;    Nome"
+              id="name"
               onChange={(e) => setName(e.target.value)}
               value={name}
             />
+            <span className="input-error">
+              {errors?.name?.message as string}
+            </span>
 
             <input
+              {...register("email")}
               type="text"
               className="input"
               placeholder="&#xf0e0;    Email"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
             />
-            <input
+            <span className="input-error">
+              {errors?.email?.message as string}
+            </span>
+            <InputMask
+              mask={"(99) 9999-99999"}
+              {...register("phoneNumber")}
               type="text"
               className="input"
               placeholder="&#xf095;    Telefone"
               onChange={(e) => setPhoneNumber(e.target.value)}
               value={phoneNumber}
             />
-
+            <span className="input-error">
+              {errors?.phoneNumber?.message as string}
+            </span>
             <h1 className="subject">Assunto</h1>
             <div className="checkbox-control">
               <div>
@@ -169,11 +204,15 @@ function Contact() {
             </div>
 
             <textarea
+              {...register("message")}
               className="textarea"
               placeholder="Mensagem"
               onChange={(e) => setMessage(e.target.value)}
               value={message}
             />
+            <span className="input-error">
+              {errors?.message?.message as string}
+            </span>
 
             <input type="submit" className="button" value="Enviar" />
 
@@ -181,10 +220,10 @@ function Contact() {
               <input
                 className="checkbox"
                 type="checkbox"
-                id="doacoes"
-                name="doacoes"
+                id="noticias"
+                name="noticias"
               />
-              <label htmlFor="doacoes">
+              <label htmlFor="noticias">
                 Concordo em receber notícias do IEC.
               </label>
             </div>

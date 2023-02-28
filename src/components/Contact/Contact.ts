@@ -175,6 +175,12 @@ export const ContactForm = styled.div`
     font-family: FontAwesome;
     text-align: right;
   }
+  .input-error {
+    font-size: 12px;
+    color: #d93025;
+    font-family:"Helvetica";
+  }
+
   @media screen and (max-width: 940px) {
     .button {
       left: 82%;
