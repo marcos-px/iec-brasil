@@ -5,13 +5,14 @@ import InputMask from "react-input-mask";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import { AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
+import { AiFillYoutube, AiOutlineMail, AiOutlinePhone } from "react-icons/ai";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { ContactForm, ContactInfo } from "../components/Contact/Contact";
 import emailjs from "@emailjs/browser";
 import Footer from "../components/Footer";
 import { Header } from "../components/Header";
+import { Link } from "react-router-dom";
 
 function Contact() {
   const [name, setName] = useState("");
@@ -24,9 +25,9 @@ function Contact() {
 
   const schema = yup.object({
     name: yup.string().required("Digite o seu nome"),
-    email: yup.string().required("Escolha um e-mail válido"),
+    email: yup.string().email().required("Digite um e-mail válido"),
     phoneNumber: yup.string().required("Informe um número de telefone válido."),
-    message: yup.string(),
+    message: yup.string().required("Digite a sua mensagem aqui."),
   });
 
   const {
@@ -40,7 +41,6 @@ function Contact() {
 
   function sendEmail() {
     // e.preventDefault();
-
     const templateParams = {
       from_name: name,
       message: message,
@@ -56,7 +56,7 @@ function Contact() {
       )
       .then(
         (response) => {
-          // alert("E-mail enviado com sucesso."); -- ALERTA DE ENVIO --
+          alert("E-mail enviado com sucesso.");
           console.log("Email enviado", response.status, response.text);
           setName("");
           setEmail("");
@@ -67,7 +67,6 @@ function Contact() {
           console.log("Error", error.status, error);
         }
       );
-      
   }
 
   return (
@@ -107,9 +106,18 @@ function Contact() {
                 <p>(00)00000-0000</p>
               </div>
               <div className="social-media">
-                <FaInstagram />
-                <FaFacebookF />
-                <FaLinkedinIn />
+                <Link to={"https://www.instagram.com/iecbrasil/"}>
+                  <FaInstagram />
+                </Link>
+                <Link to={"https://www.facebook.com/iecbrasil.org"}>
+                  <FaFacebookF />
+                </Link>
+                <Link to={"https://www.linkedin.com/company/iecbrasil/"}>
+                  <FaLinkedinIn />
+                </Link>
+                <Link to={"https://www.youtube.com/@iecbrasil7560"}>
+                  <AiFillYoutube />
+                </Link>
               </div>
             </div>
           </div>
@@ -165,45 +173,11 @@ function Contact() {
               {errors?.phoneNumber?.message as string}
             </span>
             <h1 className="subject">Assunto</h1>
-            <div className="checkbox-control">
-              <div>
-                <input
-                  className="checkbox"
-                  type="checkbox"
-                  id="financeiro"
-                  name="financeiro"
-                />
-                <label htmlFor="financeiro">Financeiro</label>
-              </div>
-              <div>
-                <input
-                  className="checkbox"
-                  type="checkbox"
-                  id="marketing"
-                  name="marketing"
-                />
-                <label htmlFor="marketing">Marketing</label>
-              </div>
-              <div>
-                <input
-                  className="checkbox"
-                  type="checkbox"
-                  id="juridico"
-                  name="juridico"
-                />
-                <label htmlFor="juridico">Jurídico</label>
-              </div>
-              <div>
-                <input
-                  className="checkbox"
-                  type="checkbox"
-                  id="doacoes"
-                  name="doacoes"
-                />
-                <label htmlFor="doacoes">Doações</label>
-              </div>
-              <div></div>
-            </div>
+            <input
+              type="text"
+              className="subject-content"
+              placeholder="Informe o assunto"
+            />
 
             <textarea
               {...register("message")}

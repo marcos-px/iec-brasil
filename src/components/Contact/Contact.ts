@@ -15,7 +15,7 @@ export const ContactForm = styled.div`
   .contact-title {
     width: 600px;
     h1 {
-      margin-bottom: 16px;
+      margin-bottom: 25px;
     }
     p {
       margin-bottom: 25px;
@@ -30,6 +30,20 @@ export const ContactForm = styled.div`
   .subject {
     margin: 25px 0px;
   }
+  .subject-content {
+    background-color: #fff8f0;
+    margin-bottom: 14px;
+    height: 34px;
+    border: 0;
+    padding: 0 8px;
+    border-bottom: 1px inset #8f8f8f;
+    opacity: 50%;
+    font-family: Archivo;
+    font-size: 16px;
+    &:focus {
+      opacity: 100%;
+    }
+  }
   .input {
     background-color: #fff8f0;
     margin-bottom: 14px;
@@ -37,33 +51,29 @@ export const ContactForm = styled.div`
     border: 0;
     padding: 0 8px;
     border-bottom: 1px inset #8f8f8f;
-    opacity: 30%;
-    font-family: FontAwesome;
+    opacity: 50%;
+    font-family: FontAwesome, Archivo;
     font-size: 16px;
+    &:focus {
+      opacity: 100%;
+    }
   }
-
   .textarea {
     margin-bottom: 14px;
     border: 0;
     border-bottom: 1px solid #8f8f8f;
     padding: 8px;
-    height: 38px;
+    height: 68px;
     resize: none;
     margin-top: 20px;
     background-color: transparent;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    overflow: hidden;
-  }
-  .textarea::placeholder {
-    font-family: "Archivo";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-  }
-  .textarea:active {
-    background-color: transparent;
+    opacity: 50%;
+    &:focus {
+      opacity: 100%;
+    }
   }
 
   .button {
@@ -79,11 +89,10 @@ export const ContactForm = styled.div`
     background-color: #1ca3dd;
     font-size: 16px;
     transition: background-color, transform 0.8s;
-  }
-
-  .button:hover {
-    background-color: #0fe3ff;
-    transform: scale(1.01);
+    &:hover {
+      background-color: #3333ff;
+      transform: scale(1.01);
+    }
   }
   .checkbox-control {
     display: flex;
@@ -178,7 +187,7 @@ export const ContactForm = styled.div`
   .input-error {
     font-size: 12px;
     color: #d93025;
-    font-family:"Helvetica";
+    font-family: "Helvetica";
   }
 
   @media screen and (max-width: 940px) {
@@ -227,6 +236,9 @@ export const ContactInfo = styled.div`
   .social-media {
     display: flex;
     margin-top: 120px;
-    gap: 60px;
+    gap: 30px;
+  }
+  .social-media :only-child {
+    cursor: pointer;
   }
 `;
