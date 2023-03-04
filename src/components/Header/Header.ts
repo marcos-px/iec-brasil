@@ -7,6 +7,7 @@ export const HeaderStyle = styled.div`
   height: 100vh;
   background-color: #1ca3dd;
   gap: 150px;
+  position: relative;
   .header-icons {
     display: flex;
     justify-content: center;
@@ -25,21 +26,22 @@ export const HeaderStyle = styled.div`
     font-size: 24px;
   }
 
-.social-media :only-child{
-  cursor: pointer;
-}
+  .social-media :only-child {
+    cursor: pointer;
+  }
   .header-buttons {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .link-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none; 
-  white-space: nowrap;
-  margin-right: 24px;
-  color: white;
+  .link-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    white-space: nowrap;
+    margin-right: 24px;
+    color: white;
+    cursor: pointer;
   }
 `;

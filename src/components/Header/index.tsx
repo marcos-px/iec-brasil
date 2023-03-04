@@ -8,6 +8,7 @@ import {
 import { Link } from "react-router-dom";
 import Logo from "../../assets/logo.svg";
 import { StyledButton } from "../Button";
+import Home from "../../pages/Home/Home";
 export function Header() {
   return (
     <HeaderStyle>
@@ -32,19 +33,19 @@ export function Header() {
         </div>
       </div>
       <div className="header-buttons" style={{ background: "transparent" }}>
-        <Link className="link-buttons" to={""}>
+        <Link className="link-buttons" to={"/"}>
           Home
         </Link>
-        <Link className="link-buttons" to={""}>
+        <Link className="link-buttons" to={"/proeduc"}>
           Proeduc
         </Link>
-        <Link className="link-buttons" to={""}>
+        {/* <Link className="link-buttons" to={""}>
           Projetos
         </Link>
         <Link className="link-buttons" to={""}>
           Blog
-        </Link>
-        <Link className="link-buttons" to={""}>
+        </Link> */}
+        <Link className="link-buttons" to={"/contato"}>
           Contato
         </Link>
         <StyledButton color="black" background="#FBFBFB">

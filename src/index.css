@@ -1,59 +1,72 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @font-face {
   font-family: "Archivo-condensed";
   src: url("../src/assets/Archivo_Condensed-Bold.ttf");
   src: url("../src/assets/Archivo_Condensed-Bold.ttf") format("woff"),
-  url("../src/assets/Archivo_Condensed-Bold.ttf") format("opentype"),
-  }
+    url("../src/assets/Archivo_Condensed-Bold.ttf") format("opentype");
+}
 
 @font-face {
   font-family: "Archivo-extra-condensed";
   src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf");
   src: url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("woff"),
-  url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("opentype"),
-  }
+    url("../src/assets/Archivo_ExtraCondensed-Medium.ttf") format("opentype");
+}
 
-:root{
-  --amarelo: #ECBF4A;
-  --laranja: #EB784C;
-  --verde: #40C078;
-  --light: #FFFFFF;
+:root {
+  --amarelo: #ecbf4a;
+  --laranja: #eb784c;
+  --verde: #40c078;
+  --light: #ffffff;
   --medium: #838383;
-  --heavy: #1E1E1E;
-  --azul: #1CA3DD;
+  --heavy: #1e1e1e;
+  --azul: #1ca3dd;
   --azulEscuro: #203745;
-  --hover: #1C1A41;
+  --hover: #1c1a41;
   --neutral: #495057;
-  --cinza: #8F8F8F;
+  --cinza: #8f8f8f;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Archivo', sans-serif;
+  max-width: 100%;
+  font-family: "Archivo", sans-serif;
 }
 
-body{
-  background-color: #FFF8F0;
-  overflow-x: hidden; /* esconder scroll no eixo X */;
+body {
+  background-color: #fff8f0;
+  overflow-x: hidden; /* esconder scroll no eixo X */
 }
-
 a {
   all: unset;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
 
 img {
   max-width: 100%;
 }
 
+.contact-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  height: 680px;
+  background-color: #fff8f0;
+}
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    gap: 0px;
+  }
+}
 
 /* container com o tamanho mais utilizado */
-.container-home{
+.container-home {
   max-width: 1220px;
   margin: 0 auto;
 }
