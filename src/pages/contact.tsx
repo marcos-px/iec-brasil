@@ -19,6 +19,7 @@ function Contact() {
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
 
   // const phoneRegExp = /^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,3})|(\(?\d{2,3} \)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1} $/
   ///^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
@@ -27,6 +28,7 @@ function Contact() {
     name: yup.string().required("Digite o seu nome"),
     email: yup.string().email().required("Digite um e-mail válido"),
     phoneNumber: yup.string().required("Informe um número de telefone válido."),
+    subject: yup.string().required("Informe o assunto da mensagem"),
     message: yup.string().required("Digite a sua mensagem aqui."),
   });
 
@@ -46,6 +48,7 @@ function Contact() {
       message: message,
       email: email,
       phone: phoneNumber,
+      subject: subject,
     };
     emailjs
       .send(
@@ -62,6 +65,7 @@ function Contact() {
           setEmail("");
           setPhoneNumber("");
           setMessage("");
+          setSubject("");
         },
         (error) => {
           console.log("Error", error.status, error);
@@ -177,8 +181,14 @@ function Contact() {
               type="text"
               className="subject-content"
               placeholder="Informe o assunto"
+              {...register("subject")}
+              id="subject"
+              onChange={(e) => setSubject(e.target.value)}
+              value={subject}
             />
-
+            <span className="input-error">
+              {errors?.subject?.message as string}
+            </span>
             <textarea
               {...register("message")}
               className="textarea"
