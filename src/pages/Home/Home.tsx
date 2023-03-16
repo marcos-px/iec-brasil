@@ -46,7 +46,7 @@ const Home = (props: HomeProps) => {
   const what = useRef(null)
   const why = useRef(null)
 
-  const scrollTo = (elementRef:any) =>{
+  const scrollTo = (elementRef: any) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: 'smooth'
@@ -72,17 +72,16 @@ const Home = (props: HomeProps) => {
                   índices. Nós criamos a vontade de aprender e continuar
                   evoluindo nos alunos, nos professores e nas escolas.
                 </p>
-                <BlueButton href="#" children={"Quero apoiar"} />
+                <BlueButton href="/contato" children={"Quero apoiar"} />
               </div>
               <div className="video">
-                <iframe
-                  width="506"
-                  height="304"
-                  src="https://www.youtube.com/embed/T_u8g7vjt1M?controls=0"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <iframe width = "560"
+                height = "315"
+                src = "https://www.youtube.com/watch?v=TBOM08UibT8"
+                title = "YouTube video player"
+                allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen > 
+                </iframe>
               </div>
             </div>
           </HeroSectionTop>
@@ -127,7 +126,6 @@ const Home = (props: HomeProps) => {
                   "Após a leitura do passo a passo, você será capaz de escrever com agilidade e segurança. Entenderá também que a Metáfora é uma poderosa ferramenta para o autoconhecimento."
                 }
                 color={"amarelo"}
-                link={"#"}
               />
               <ColoredCard
                 img={book}
@@ -136,17 +134,8 @@ const Home = (props: HomeProps) => {
                   "As metáforas na educação têm o poder de criar, transformar, elucidar e fazer grandes e profundas reflexões."
                 }
                 color={"verde"}
-                link={"#"}
               />
-              <ColoredCard
-                img={pencil}
-                title={"[placeholder]"}
-                text={
-                  "Nas minhas andanças pela educação me deparei com histórias que inspiraram e ensinaram. Decidi publicá-las no formato de metáforas. O objetivo é compartilhá-las com todos aqueles que educam "
-                }
-                color={"laranja"}
-                link={"#"}
-              />
+
             </div>
           </div>
         </TrapezoidCards>
@@ -182,76 +171,23 @@ const Home = (props: HomeProps) => {
         </TrapezoidMiddle>
         <TrapezoidBottom>
           <div className="content container-home">
-            <h2>projetos</h2>
-            <div className="cards">
-              <ProjectCard
-                title={"curso de ciência e tecnologia"}
-                image={estudante3}
-                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
-                link={'#'}
-                imageHover={estudante3hover}
-                />
-              <ProjectCard
-                title={"curso de ciência e tecnologia"}
-                image={estudante4}
-                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
-                link={'#'}
-                imageHover={estudante4hover}
-              />
-              <ProjectCard
-                title={"curso de ciência e tecnologia"}
-                image={estudante5}
-                resume={"Lorem ipsum dolor sit amet consectetur. Sit turpis urna amet gravida vitae nascetur placerat. Sed in sit diam imperdiet. Viverra."}
-                link={'#'}
-                imageHover={estudante5hover}
-              />
-            </div>
-            <div className="btn">
-              <BlueButton href="#" children={"Ver todos"} />
-            </div>
           </div>
         </TrapezoidBottom>
         <Partners>
           <div className="container-home">
             <h2>parceiros</h2>
             <div className="images">
-              <img src={placeholder} alt="icone placeholder" />
-              <img src={placeholder} alt="icone placeholder" />
-              <img src={placeholder} alt="icone placeholder" />
-              <img src={placeholder} alt="icone placeholder" />
-              <img src={placeholder} alt="icone placeholder" />
+              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
+              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
+              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
+              {/* <img src={placeholder} alt="icone placeholder" />
+              <img src={placeholder} alt="icone placeholder" /> */}
             </div>
           </div>
         </Partners>
         <News>
           <div className="container-home">
-            <h2>notícias</h2>
-            <div className="news">
-              <NewsCard
-                img={noticia1}
-                date={"17 de janeiro 2023"}
-                title={"Novo estudo revela impacto positivo de turmas pequenas nos resultados de aprendizagem dos alunos"}
-                text={"Projeto mostra evidências sobre o que é eficaz no âmbito escolar. Qualidade do professor tem grande impacto sobre desempenho dos alunos."}
-                link={"#"}
-              />
-              <NewsCard
-                img={noticia2}
-                date={"17 de janeiro 2023"}
-                title={"Governo anuncia investimentos em tecnologia para melhorar a educação à distância"}
-                text={"Projeto mostra evidências sobre o que é eficaz no âmbito escolar. Qualidade do professor tem grande impacto sobre desempenho dos alunos."}
-                link={"#"}
-              />
-              <NewsCard
-                img={noticia3}
-                date={"17 de janeiro 2023"}
-                title={"Universidades públicas brasileiras recebem verbas para ampliação de programas de pós-graduação"}
-                text={"Projeto mostra evidências sobre o que é eficaz no âmbito escolar. Qualidade do professor tem grande impacto sobre desempenho dos alunos."}
-                link={"#"}
-              />
-            </div>
-            <div className="btn">
-              <BlueButton href="#" children={"Ver todos"} />
-            </div>
+
           </div>
         </News>
       </HomeStyle>

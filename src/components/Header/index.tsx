@@ -14,7 +14,9 @@ export function Header() {
     <HeaderStyle>
       <div className="header-icons">
       {/* Tratar isso     width: 110px; height: 78px; */}
+      <a href="/" title="Página Inicial">
         <img className="iec-logo" src={Logo} alt="Logo" /> 
+        </a>
         <div className="social-media">
           <Link to={"https://www.instagram.com/iecbrasil/"}>
             <AiOutlineInstagram />
