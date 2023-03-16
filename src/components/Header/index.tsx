@@ -13,7 +13,8 @@ export function Header() {
   return (
     <HeaderStyle>
       <div className="header-icons">
-        <img className="iec-logo" src={Logo} alt="Logo" />
+      {/* Tratar isso     width: 110px; height: 78px; */}
+        <img className="iec-logo" src={Logo} alt="Logo" /> 
         <div className="social-media">
           <Link to={"https://www.instagram.com/iecbrasil/"}>
             <AiOutlineInstagram />
@@ -48,9 +49,9 @@ export function Header() {
         <Link className="link-buttons" to={"/contato"}>
           Contato
         </Link>
-        <StyledButton color="black" background="#FBFBFB">
+        <Link className="link-buttons" to={"/contato"}>
           Quero apoiar
-        </StyledButton>
+        </Link>
       </div>
     </HeaderStyle>
   );

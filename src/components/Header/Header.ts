@@ -16,8 +16,8 @@ export const HeaderStyle = styled.div`
   }
   .iec-logo {
     margin-left: 40px;
-    width: 90px;
-    height: 65px;
+    width: 110px;
+    height: 78px;
   }
   .social-media {
     display: flex;
