@@ -82,7 +82,7 @@ function Contact() {
                 <h4>Converse com a gente</h4>
               </div>
               <div>
-                <p>email@email.com</p>
+                <p>contato@iecbrasil.org.br</p>
               </div>
             </div>
             <div className="info-contact-control">
@@ -148,7 +148,7 @@ function Contact() {
               {errors?.email?.message as string}
             </span>
             <InputMask
-              mask={"(99) 9999-99999"}
+              mask={"(99) 99999-9999"}
               {...register("phoneNumber")}
               type="text"
               className="input"

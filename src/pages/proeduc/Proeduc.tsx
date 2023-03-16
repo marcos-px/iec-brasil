@@ -1,6 +1,6 @@
 import { Project } from "../../components/project/Project";
 import { Header } from "../../components/Header";
-import { Container, Div, FirstSection, ObjectiveTitle, ObjectiveTitles, ProjectContainer, SecondSection, ThirdSection } from "./Proeduc.style";
+import { Container, Div, FirstSection, ObjectiveTitle, ObjectiveTitles, ProjectContainer, ObjectiveContainer, SecondSection, ThirdSection } from "./Proeduc.style";
 import GeralImage from '../../assets/GeralImage.jpg'
 import EstudantesImage from '../../assets/EstudantesImage.jpg'
 import EducadoresImage from '../../assets/EducadoresImage.jpg'
@@ -28,7 +28,18 @@ export default function Proeduc({ color }:Props) {
       </Div>
       <FirstSection>
         <div>
-        <iframe style={{ border: '1px solid #000000' }} width="1002px" height="602px" src="https://www.youtube.com/embed/jctJlqkfJXQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+        <iframe style = {
+          {
+            border: '1px solid #000000'
+          }
+        }
+        width = "1002px"
+        height = "602px"
+        src = "https://www.youtube.com/embed/Muy8Kf2vH3M"
+        title = "YouTube video player"
+        allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen > 
+        </iframe>
           <p>
             O PROEDUC é um programa inédito no Brasil, que trabalha a individualidade de cada estudante e promove a educação com base no reforço positivo.
             <br/> <br />
@@ -59,6 +70,7 @@ export default function Proeduc({ color }:Props) {
         </ProjectContainer>
         </section>
       </SecondSection>
+      <ObjectiveContainer>
       <ThirdSection>
         <h2>objetivos</h2>
         <ObjectiveTitles>
@@ -106,6 +118,7 @@ export default function Proeduc({ color }:Props) {
           </div>
         </Container>
       </ThirdSection>
+      </ObjectiveContainer>
       <Footer />
     </>
   )

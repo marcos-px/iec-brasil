@@ -48,38 +48,25 @@ function Footer() {
           </div>
         </div>
         <div className="ContainerContatoFooter">
-          <label>
-            Newslatter
-            <div>
-              <input type="text" placeholder="Email" />
-              <i>
-                <BiEnvelope />
-              </i>
-              <button>
-                <BiEnvelope />
-                <AiOutlineArrowRight />
-              </button>
-            </div>
-          </label>
           <div className="NavegacaoRedesSociais">
             <ul>
               <li>
-                <Link to={""}>
+                <Link target={"_blank"} to={"https://www.instagram.com/iecbrasil/"}>
                   <AiOutlineInstagram />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link target={"_blank"} to={"https://www.facebook.com/iecbrasil.org"}>
                   <FaFacebookF />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link target={"_blank"} to={"https://www.linkedin.com/company/iecbrasil/"}>
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link target={"_blank"} to={"https://www.youtube.com/@iecbrasil7560"}>
                   <AiFillYoutube />
                 </Link>
               </li>
@@ -89,7 +76,7 @@ function Footer() {
       </InfoFooter>
       <div className="RodapeFooter">
         <p>
-          2023 Instituto de Educação e Cidadania.Todos os direitos reservados
+          2023. Instituto de Educação e Cidadania.Todos os direitos reservados.
         </p>
       </div>
     </FooterStyle>
