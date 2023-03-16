@@ -24,19 +24,14 @@ function Footer() {
             <h3>Navegação</h3>
             <ul>
               <li>
-                <Link to={""}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={""}>Proeduc</Link>
+                <Link to={"proeduc"}>Proeduc</Link>
               </li>
+
               <li>
-                <Link to={""}>Projetos</Link>
-              </li>
-              <li>
-                <Link to={""}>Blog</Link>
-              </li>
-              <li>
-                <Link to={""}>Contato</Link>
+                <Link to={"/contato"}>Contato</Link>
               </li>
             </ul>
           </div>
@@ -71,11 +66,6 @@ function Footer() {
               <li>
                 <Link to={""}>
                   <AiOutlineInstagram />
-                </Link>
-              </li>
-              <li>
-                <Link to={""}>
-                  <AiOutlineTwitter />
                 </Link>
               </li>
               <li>
