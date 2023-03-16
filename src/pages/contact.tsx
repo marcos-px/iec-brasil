@@ -82,7 +82,7 @@ function Contact() {
                 <h4>Converse com a gente</h4>
               </div>
               <div>
-                <p>email@email.com</p>
+                <p>contato@iecbrasil.org.br</p>
               </div>
             </div>
             <div className="info-contact-control">
