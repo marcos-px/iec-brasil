@@ -13,24 +13,24 @@ export function Header() {
   return (
     <HeaderStyle>
       <div className="header-icons">
-      {/* Tratar isso     width: 110px; height: 78px; */}
-      <a href="/" title="Página Inicial">
-        <img className="iec-logo" src={Logo} alt="Logo" /> 
+        {/* Tratar isso     width: 110px; height: 78px; */}
+        <a href="/" title="Página Inicial">
+          <img className="iec-logo" src={Logo} alt="Logo" />
         </a>
         <div className="social-media">
-          <Link to={"https://www.instagram.com/iecbrasil/"}>
+          <Link target={"_blank"} to={"https://www.instagram.com/iecbrasil/"}>
             <AiOutlineInstagram />
           </Link>
-          {/* <Link to={"https://twitter.com/iecbrasil"}>
-            <AiOutlineTwitter />
-          </Link> */}
-          <Link to={"https://www.facebook.com/iecbrasil.org"}>
+          <Link target={"_blank"} to={"https://www.facebook.com/iecbrasil.org"}>
             <FaFacebookF />
           </Link>
-          <Link to={"https://www.linkedin.com/company/iecbrasil/"}>
+          <Link
+            target={"_blank"}
+            to={"https://www.linkedin.com/company/iecbrasil/"}
+          >
             <FaLinkedinIn />
           </Link>
-          <Link to={"https://www.youtube.com/@iecbrasil7560"}>
+          <Link target={"_blank"} to={"https://www.youtube.com/@iecbrasil7560"}>
             <AiFillYoutube />
           </Link>
         </div>

@@ -169,10 +169,7 @@ const Home = (props: HomeProps) => {
             </div>
           </div>
         </TrapezoidMiddle>
-        <TrapezoidBottom>
-          <div className="content container-home">
-          </div>
-        </TrapezoidBottom>
+        
         <Partners>
           <div className="container-home">
             <h2>parceiros</h2>

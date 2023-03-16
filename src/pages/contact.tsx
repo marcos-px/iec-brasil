@@ -21,9 +21,6 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [subject, setSubject] = useState("");
 
-  // const phoneRegExp = /^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,3})|(\(?\d{2,3} \)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1} $/
-  ///^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
-
   const schema = yup.object({
     name: yup.string().required("Digite o seu nome"),
     email: yup.string().email().required("Digite um e-mail válido"),
@@ -95,9 +92,9 @@ function Contact() {
               </div>
               <div>
                 <p>
-                  Rua Lorem ipsum, 00 <br />
-                  Cidade/Estado <br />
-                  CEP 00000-000{" "}
+                  Rua do do Ouro, 104 Sala 803 <br />
+                  Serra/BH <br />
+                  CEP 30220 000{" "}
                 </p>
               </div>
             </div>
@@ -107,21 +104,7 @@ function Contact() {
                 <h4>Telefone</h4>
               </div>
               <div>
-                <p>(00)00000-0000</p>
-              </div>
-              <div className="social-media">
-                <Link to={"https://www.instagram.com/iecbrasil/"}>
-                  <FaInstagram />
-                </Link>
-                <Link to={"https://www.facebook.com/iecbrasil.org"}>
-                  <FaFacebookF />
-                </Link>
-                <Link to={"https://www.linkedin.com/company/iecbrasil/"}>
-                  <FaLinkedinIn />
-                </Link>
-                <Link to={"https://www.youtube.com/@iecbrasil7560"}>
-                  <AiFillYoutube />
-                </Link>
+                <p>+55 (31) 98899-2558</p>
               </div>
             </div>
           </div>
@@ -201,18 +184,6 @@ function Contact() {
             </span>
 
             <input type="submit" className="button" value="Enviar" />
-
-            <div>
-              <input
-                className="checkbox"
-                type="checkbox"
-                id="noticias"
-                name="noticias"
-              />
-              <label htmlFor="noticias">
-                Concordo em receber notícias do IEC.
-              </label>
-            </div>
           </form>
         </ContactForm>
       </div>

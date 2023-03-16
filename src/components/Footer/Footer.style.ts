@@ -103,15 +103,17 @@ export const InfoFooter = styled.div`
         }
       }
     }
+  
     .NavegacaoRedesSociais ul {
       display: flex;
       margin-top: 30px;
       font-size: 25px;
+      gap: 15px;
       li {
         margin: 0 10px;
         cursor: pointer;
         :nth-child(1) {
-          margin-left: -40px;
+          margin-left: -45px;
         }
         :hover {
           color: #12688e;
