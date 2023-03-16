@@ -30,10 +30,9 @@ import icon1 from "../../assets/img-icon1.svg";
 import icon2 from "../../assets/img-icon2.svg";
 import icon3 from "../../assets/img-icon3.svg";
 import icon4 from "../../assets/img-icon4.svg";
-import placeholder from "../../assets/placeholder.png";
-import noticia1 from "../../assets/img-noticia1.png";
-import noticia2 from "../../assets/img-noticia2.png";
-import noticia3 from "../../assets/img-noticia3.png";
+import placeholder4 from "../../assets/educacao.svg"
+import placeholder3 from "../../assets/prefeitura.svg"
+import placeholder2 from "../../assets/parimpar.svg"
 import Footer from "../../components/Footer";
 
 type HomeProps = {
@@ -177,11 +176,9 @@ const Home = (props: HomeProps) => {
           <div className="container-home">
             <h2>parceiros</h2>
             <div className="images">
-              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
-              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
-              <a href=""><img src={placeholder} alt="icone placeholder" /></a>
-              {/* <img src={placeholder} alt="icone placeholder" />
-              <img src={placeholder} alt="icone placeholder" /> */}
+              <a href="https://parimpar.com.br" target="_blank"><img src={placeholder2} alt="icone placeholder" /></a>
+              <a href="https://www.mariana.mg.gov.br/" target="_blank"><img src={placeholder3} alt="icone placeholder" /></a>
+              <a href="#"><img src={placeholder4} alt="icone placeholder" /></a>
             </div>
           </div>
         </Partners>
