@@ -44,7 +44,7 @@ function Footer() {
             <h3>Termos e Políticas</h3>
             <ul>
               <li>
-                <Link to={""}>Termos de uso</Link>
+                <Link target={"_blank"} to={"/termosdeuso"}>Termos de uso</Link>
               </li>
               <li>
                 <Link to={""}>Política de privacidade</Link>
