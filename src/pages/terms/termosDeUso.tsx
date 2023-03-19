@@ -1,6 +1,6 @@
 import {TermoDeUso} from "./style";
 
-import {Header} from "../../components/Header/";
+import {Header} from "../../components/Header/index";
 import Footer from "../../components/Footer/index";
 
 
