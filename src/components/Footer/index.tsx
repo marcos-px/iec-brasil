@@ -39,10 +39,12 @@ function Footer() {
             <h3>Termos e Políticas</h3>
             <ul>
               <li>
-                <Link target={"_blank"} to={"/termosdeuso"}>Termos de uso</Link>
+                <Link target={"_blank"} to={"/termosdeuso"}>
+                  Termos de uso
+                </Link>
               </li>
               <li>
-                <Link to={""}>Política de privacidade</Link>
+                <Link to={"/privacy"}>Política de privacidade</Link>
               </li>
             </ul>
           </div>
@@ -51,22 +53,34 @@ function Footer() {
           <div className="NavegacaoRedesSociais">
             <ul>
               <li>
-                <Link target={"_blank"} to={"https://www.instagram.com/iecbrasil/"}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.instagram.com/iecbrasil/"}
+                >
                   <AiOutlineInstagram />
                 </Link>
               </li>
               <li>
-                <Link target={"_blank"} to={"https://www.facebook.com/iecbrasil.org"}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.facebook.com/iecbrasil.org"}
+                >
                   <FaFacebookF />
                 </Link>
               </li>
               <li>
-                <Link target={"_blank"} to={"https://www.linkedin.com/company/iecbrasil/"}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.linkedin.com/company/iecbrasil/"}
+                >
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link target={"_blank"} to={"https://www.youtube.com/@iecbrasil7560"}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.youtube.com/@iecbrasil7560"}
+                >
                   <AiFillYoutube />
                 </Link>
               </li>

@@ -4,6 +4,7 @@ import AppLogin from "../pages/LoginPage";
 import Home from "../pages/Home/Home";
 import Contact from "../pages/contact";
 import TermosDeUso from "../pages/terms/termosDeUso";
+import Privacy from "../pages/terms/privacy";
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/termosdeuso",
     element: <TermosDeUso />,
+  },
+  {
+    path: "/privacy",
+    element: <Privacy />,
   },
 
 ]);
