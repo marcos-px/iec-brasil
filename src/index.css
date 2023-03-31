@@ -56,14 +56,19 @@ img {
   display: flex;
   align-items: center;
   gap: 60px;
-  height: 680px;
+  height: 100%;
   background-color: #fff8f0;
+  padding-left: 10px;
 }
-@media screen and (max-width: 1024px) {
-  .contact-container {
-    gap: 0px;
+  @media screen and (max-width: 400px){
+    .contact-container{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+
   }
-}
+
+
 
 /* container com o tamanho mais utilizado */
 .container-home {
