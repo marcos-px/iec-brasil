@@ -30,27 +30,25 @@ import icon1 from "../../assets/img-icon1.svg";
 import icon2 from "../../assets/img-icon2.svg";
 import icon3 from "../../assets/img-icon3.svg";
 import icon4 from "../../assets/img-icon4.svg";
-import placeholder4 from "../../assets/educacao.svg"
-import placeholder3 from "../../assets/prefeitura.svg"
-import placeholder2 from "../../assets/parimpar.svg"
+import placeholder4 from "../../assets/educacao.svg";
+import placeholder3 from "../../assets/prefeitura.svg";
+import placeholder2 from "../../assets/parimpar.svg";
+import placeholder5 from "../../assets/prosper.png";
 import Footer from "../../components/Footer";
 
-type HomeProps = {
-
-};
+type HomeProps = {};
 
 const Home = (props: HomeProps) => {
-
-  const who = useRef(null)
-  const what = useRef(null)
-  const why = useRef(null)
+  const who = useRef(null);
+  const what = useRef(null);
+  const why = useRef(null);
 
   const scrollTo = (elementRef: any) => {
     window.scrollTo({
       top: elementRef.current.offsetTop,
-      behavior: 'smooth'
-    })
-  }
+      behavior: "smooth",
+    });
+  };
 
   return (
     <>
@@ -74,13 +72,14 @@ const Home = (props: HomeProps) => {
                 <BlueButton href="/contato" children={"Quero apoiar"} />
               </div>
               <div className="video">
-                <iframe width = "560"
-                height = "315"
-                src = "https://www.youtube.com/embed/Muy8Kf2vH3M"
-                title = "YouTube video player"
-                allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen > 
-                </iframe>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/Muy8Kf2vH3M"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
               </div>
             </div>
           </HeroSectionTop>
@@ -134,7 +133,6 @@ const Home = (props: HomeProps) => {
                 }
                 color={"verde"}
               />
-
             </div>
           </div>
         </TrapezoidCards>
@@ -168,21 +166,31 @@ const Home = (props: HomeProps) => {
             </div>
           </div>
         </TrapezoidMiddle>
-        
+
         <Partners>
           <div className="container-home">
             <h2>parceiros</h2>
             <div className="images">
-              <a href="https://parimpar.com.br" target="_blank"><img src={placeholder2} alt="icone placeholder" /></a>
-              <a href="https://www.mariana.mg.gov.br/" target="_blank"><img src={placeholder3} alt="icone placeholder" /></a>
-              <a href="#"><img src={placeholder4} alt="icone placeholder" /></a>
+              <a href="https://parimpar.com.br" target="_blank">
+                <img src={placeholder2} alt="icone placeholder" />
+              </a>
+              <a href="https://www.mariana.mg.gov.br/" target="_blank">
+                <img src={placeholder3} alt="icone placeholder" />
+              </a>
+              <a href="#">
+                <img src={placeholder4} alt="icone placeholder" />
+              </a>
+              <a
+                href="https://www.instagram.com/prosper.consultoria/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank"
+              >
+                <img src={placeholder5} alt="icone placeholder" />
+              </a>
             </div>
           </div>
         </Partners>
         <News>
-          <div className="container-home">
-
-          </div>
+          <div className="container-home"></div>
         </News>
       </HomeStyle>
       <Footer />
