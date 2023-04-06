@@ -224,10 +224,15 @@ h2{
 .images{
   margin: 0 auto;
   padding-bottom: 160px;
-  max-width: 930px;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
+.images a img{
+cursor: pointer;
+background-size: cover;
+background-repeat: no-repeat;
+  }
 `
 export const News = styled.section`
 h2{

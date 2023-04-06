@@ -4,7 +4,7 @@ type ColoredCardProps = {
   img: string
   title:string
   text:string
-  link:string
+  link?:string
   color:string
 }
 
@@ -14,7 +14,8 @@ const ColoredCard = ({img, title, text, link, color}: ColoredCardProps) => {
       <img src={img} alt={`ícone de ${img}`} />
       <span>{title}</span>
       <p>{text}</p>
-      <a href={link}><img src={download} alt="ícone de download" /></a>
+      {/* Adicionar quando o produto estiver pronto */}
+      {/* <a href={link}><img src={download} alt="ícone de download" /></a> */}
     </ColoredCardStyle>
   )
 }

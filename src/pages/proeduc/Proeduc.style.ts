@@ -89,6 +89,8 @@ export const ThirdSection = styled.section`
 export const ObjectiveTitles = styled.div`
   display: flex;
   margin-top: 53px;
+  margin-left: -%;
+  align-items: center;
 `;
 
 export const ObjectiveTitle = styled.div<ObjectiveTitleProps>`
@@ -111,7 +113,15 @@ export const ObjectiveTitle = styled.div<ObjectiveTitleProps>`
     margin-top: 17px;
   }
 `
+export const ObjectiveContainer = styled.div`
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width:95%;
+  margin-bottom: 100px;
+  margin:auto;
+`
 export const Container = styled.div`
   display: flex;
   justify-content: center;

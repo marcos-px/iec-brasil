@@ -24,19 +24,14 @@ function Footer() {
             <h3>Navegação</h3>
             <ul>
               <li>
-                <Link to={""}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li>
-                <Link to={""}>Proeduc</Link>
+                <Link to={"proeduc"}>Proeduc</Link>
               </li>
+
               <li>
-                <Link to={""}>Projetos</Link>
-              </li>
-              <li>
-                <Link to={""}>Blog</Link>
-              </li>
-              <li>
-                <Link to={""}>Contato</Link>
+                <Link to={"/contato"}>Contato</Link>
               </li>
             </ul>
           </div>
@@ -44,52 +39,48 @@ function Footer() {
             <h3>Termos e Políticas</h3>
             <ul>
               <li>
-                <Link to={""}>Termos de uso</Link>
+                <Link target={"_blank"} to={"/termosdeuso"}>
+                  Termos de uso
+                </Link>
               </li>
               <li>
-                <Link to={""}>Política de privacidade</Link>
+                <Link to={"/privacy"}>Política de privacidade</Link>
               </li>
             </ul>
           </div>
         </div>
         <div className="ContainerContatoFooter">
-          <label>
-            Newslatter
-            <div>
-              <input type="text" placeholder="Email" />
-              <i>
-                <BiEnvelope />
-              </i>
-              <button>
-                <BiEnvelope />
-                <AiOutlineArrowRight />
-              </button>
-            </div>
-          </label>
           <div className="NavegacaoRedesSociais">
             <ul>
               <li>
-                <Link to={""}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.instagram.com/iecbrasil/"}
+                >
                   <AiOutlineInstagram />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
-                  <AiOutlineTwitter />
-                </Link>
-              </li>
-              <li>
-                <Link to={""}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.facebook.com/iecbrasil.org"}
+                >
                   <FaFacebookF />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.linkedin.com/company/iecbrasil/"}
+                >
                   <FaLinkedinIn />
                 </Link>
               </li>
               <li>
-                <Link to={""}>
+                <Link
+                  target={"_blank"}
+                  to={"https://www.youtube.com/@iecbrasil7560"}
+                >
                   <AiFillYoutube />
                 </Link>
               </li>
@@ -99,7 +90,7 @@ function Footer() {
       </InfoFooter>
       <div className="RodapeFooter">
         <p>
-          2023 Instituto de Educação e Cidadania.Todos os direitos reservados
+          2023. Instituto de Educação e Cidadania.Todos os direitos reservados.
         </p>
       </div>
     </FooterStyle>
