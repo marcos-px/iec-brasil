@@ -20,11 +20,22 @@ h2{
   color: var(--hover);
   padding-top: 40px;
   max-width: 1064px;
+  @media screen and (max-width: 800px) {
+  margin-left: 20px; 
+  margin-right: 20px;
+  font-size: 25px;
+  text-align:justify;
+
+  }
 }
 
 .content{
   display:flex;
   margin-top: 5px;
+  @media screen and (max-width: 800px) {
+   flex-direction:column;
+    
+    }
   
   
   p{
@@ -35,11 +46,12 @@ h2{
     margin:20px;
     text-indent: 10%;
     text-align:justify;
-    
-    }
+    @media screen and (max-width: 800px) {
+      
   }
   .termo{
     width:50%;
     
   }
+ 
 `

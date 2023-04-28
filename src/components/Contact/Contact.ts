@@ -7,7 +7,7 @@ export const ContactForm = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  width: 100vh;
+  width: 90%;
   color: #fff;
   padding: 14px;
   color: #000;
@@ -93,7 +93,17 @@ export const ContactForm = styled.div`
       background-color: #3333ff;
       transform: scale(1.01);
     }
+    
+    @media screen and (max-width: 800px) {
+     margin:auto;
+     margin-top:30px;
+     margin-bottom:20px;
+     position:static;
+     
+      
+    }
   }
+  
   .checkbox-control {
     display: flex;
     justify-content: left;
@@ -207,7 +217,9 @@ export const ContactInfo = styled.div`
   width: 470px;
 
   @media screen and (max-width: 800px) {
-    display: none;
+    width:100%;
+    border:0;
+    padding:0;
   }
 
   .title-icon {

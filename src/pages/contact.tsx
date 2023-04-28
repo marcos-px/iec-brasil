@@ -75,7 +75,7 @@ function Contact() {
 
   return (
     <>
-      <Header />
+      
       <div className="contact-container">
         <ContactInfo>
           <div className="contact-info-container">
@@ -199,7 +199,7 @@ function Contact() {
             <span className="input-error">
               {errors?.message?.message as string}
             </span>
-
+            
             <input type="submit" className="button" value="Enviar" />
 
             <div>
@@ -212,11 +212,12 @@ function Contact() {
               <label htmlFor="noticias">
                 Concordo em receber notícias do IEC.
               </label>
-            </div>
+            </div>          
+
           </form>
         </ContactForm>
       </div>
-      <Footer />
+      
     </>
   );
 }

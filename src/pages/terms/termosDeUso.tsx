@@ -7,7 +7,7 @@ import Footer from "../../components/Footer/index";
 function TermosDeUso(){
 
 return (<>
-<Header/>
+
 <TermoDeUso> 
     <div className="content">                
         <div className="termo">                
@@ -72,7 +72,7 @@ return (<>
     </div>
     <h2>Caso o usuário não concorde com os termos e condições deste Termo de Uso, recomenda-se que não utilize os serviços oferecidos pelo IEC.</h2>
 </TermoDeUso>   
-<Footer/>
+
 </>);
 }
 

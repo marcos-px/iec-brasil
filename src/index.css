@@ -53,6 +53,7 @@ img {
 }
 
 .contact-container {
+  
   display: flex;
   align-items: center;
   gap: 60px;
@@ -60,7 +61,7 @@ img {
   background-color: #fff8f0;
   padding-left: 10px;
 }
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: 800px){
     .contact-container{
       display:flex;
       flex-direction: column-reverse;
